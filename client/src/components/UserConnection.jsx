@@ -17,7 +17,16 @@ function UserConnection() {
         <>
             <h2>{username ? username : 'User Connection'}</h2>
             <h3> WELCOME </h3>
-            <div id="card" className="card">
+            <div id="cards" className="cards">
+
+            <div id="card2" className="card">
+                <h4>{username ? username : 'User Connection'} et Vladimir Poutine</h4>
+                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                    quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                    voluptatem.”</p>
+            </div>
+
+            <div id="card1" className="card">
                 <form onSubmit={handleSubmit}>
                     <label>
                         <h4>Nom d'utilisateur :</h4>
@@ -28,21 +37,18 @@ function UserConnection() {
                         <input type="password" value={password} onChange={e => setPassword(e.target.value)}/>
                     </label>
                     <input type="submit" value="Se connecter"/>
+                    <h5>Vous n'avez pas de compte ?</h5>
+                    <a href="/register">Créer un compte</a>
                 </form>
             </div>
 
-            <div id="card" className="card">
-                <h4>Vous n'avez pas de compte ?</h4>
-
-                <a href="/register">Créer un compte</a>
+            <div id="card3" className="card">
+                <h4>8 ans de prison pour {username ? username : 'User Connection'}</h4>
+                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                    quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                    voluptatem.”</p>
             </div>
-
-            <div id="card" className="card">
-                <h2>{username ? username : 'User Connection'} et Vladimir Poutine</h2>
-                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.”</p>
-
             </div>
-
         </>
     );
 }
