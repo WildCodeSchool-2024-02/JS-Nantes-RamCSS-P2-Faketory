@@ -1,0 +1,84 @@
+
+body {
+font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: #970dc5;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: #970dc5;
+}
+
+p {
+    color: #111111;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card:hover {
+    background-color: #505050;
+    scale: 110%;
+}
+
+.card h4 {
+    margin: 0;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
