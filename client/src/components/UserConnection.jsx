@@ -10,7 +10,7 @@ function UserConnection() {
     const handleSubmit = (event) => {
         event.preventDefault();
         // Données à envoyer au serveur pour vérification
-       // console.log(`Username: ${username}, Password: ${password}`);
+       console.log(`Username: ${username}, Password: ${password}`);
     }
 
     return (
