@@ -36,7 +36,7 @@ function UserConnection() {
                         <h5> Mot de passe :</h5>
                         <input type="password" value={password} onChange={e => setPassword(e.target.value)}/>
                     </label>
-                    <input type="submit" value="Se connecter"/>
+                    <button className="submit">Se connecter</button>
                     <h5>Vous n'avez pas de compte ?</h5>
                     <a href="/register">Créer un compte</a>
                 </form>
