@@ -44,7 +44,7 @@ function UserConnection() {
 
             <div id="card3" className="card">
                 <h4>8 ans de prison pour {username ? username : 'Jacky LAMBROUILLE'}</h4>
-                <p>“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                <p>“Neque porro quisquam est, ipsum quia dolor sit amet, consectetur, adipisci velit, sed
                     quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
                     voluptatem.”</p>
             </div>
