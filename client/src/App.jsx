@@ -1,9 +1,10 @@
-import Sniper from "./components/Sniper";
+import UserConnection from "./components/UserConnection";
+
 
 import "./App.css";
 
 function App() {
-  return <Sniper />;
+  return <UserConnection />;
 }
 
 export default App;
