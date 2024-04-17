@@ -1,14 +1,13 @@
 :root {
   --green: #44f440;
   --red: #d30303;
-  black: #271e1e;
+  --black: #271e1e;
   --white: #ebebeb;
-
   --font: dm-sans;
 }
 
 body {
-  background-color: var(--background-dark-color);
+  background-color: var(--black);
   font-family: var(--font), sans-serif;
   font-weight: 400;
   font-size: 16px;
