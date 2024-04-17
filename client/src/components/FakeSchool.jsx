@@ -107,29 +107,15 @@ function FakeSchool() {
     },
   ];
   const randomcontent = [
-    Math.random(0, 7),
-    Math.random(0, 7),
-    Math.random(0, 7),
-    Math.random(0, 7),
-    Math.random(0, 7),
-    Math.random(0, 7),
-    Math.random(0, 7),
-    Math.random(0, 7),
+    Math.round(Math.random(0, 7) * 10),
+    Math.round(Math.random(0, 7) * 10),
+    Math.round(Math.random(0, 7) * 10),
+    Math.round(Math.random(0, 7) * 10),
+    Math.round(Math.random(0, 7) * 10),
+    Math.round(Math.random(0, 7) * 10),
+    Math.round(Math.random(0, 7) * 10),
+    Math.round(Math.random(0, 7) * 10),
   ];
-  // const randomcontent = [random(0, 7)];
-  // let valide = 0;
-  // function insertArray() {
-  // let  insert = random(0, 7);
-  //   randomcontent.map((value) => {
-  //     value === insert ? (valide = 1) : (valide = 0);
-  //   });
-  //   valide === 0 ? randomcontent.push(insert) : content.length;
-  //   randomcontent.length > content.length ? insertArray() : content.length;
-  //   console.log( randomcontent().length, ">", content.length, "tableau",  randomcontent())
-  //   return randomcontent;
-  // }
-  // insertArray();
-  // console.log(insertArray().length, ">", content.length, "tableau", insertArray())
   const contenttitleone = content[randomcontent[0]].title;
   const contenttitletwo = content[randomcontent[1]].title;
   const contenttitletree = content[randomcontent[2]].title;
