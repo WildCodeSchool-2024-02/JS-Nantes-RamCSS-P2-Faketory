@@ -1,14 +1,13 @@
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --background-dark-color: #10121a;
-  --background-dark-grey: #191d2b;
-  --border-color: #2e344e;
+  --green: #44f440;
+  --red: #d30303;
+  --black: #271e1e;
+  --white: #ebebeb;
   --font: dm-sans;
 }
 
 body {
-  background-color: var(--background-dark-color);
+  background-color: var(--black);
   font-family: var(--font), sans-serif;
   font-weight: 400;
   font-size: 16px;

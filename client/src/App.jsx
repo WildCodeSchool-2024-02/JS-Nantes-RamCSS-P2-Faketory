@@ -1,15 +1,9 @@
-import UserConnection from "./components/UserConnection";
 import FakeSchool from "./components/FakeSchool";
 
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <FakeSchool />
-      <UserConnection />
-    </>
-  );
+  return <FakeSchool />;
 }
 
 export default App;

@@ -126,32 +126,32 @@ function FakeSchool() {
   const contenteight = content[7].content;
 
   return (
-      <div className="contener">
-        <div className="one">{contentone}</div>
-        <h1 className="title">FAKESCHOOL</h1>
-        <div className="two">{contenttwo}</div>
-        <div className="tree">
-          <img src="{contentimagetree}" alt="" />
-          {contenttree}
-        </div>
-        <div className="for">
-          <img src="images/photo.jpg" alt="" />
-          {contentfor}
-        </div>
-        <div className="five">
-          <img src="images/photo.jpg" alt="" />
-          {contentfive}
-        </div>
-        <div className="six">
-          <img src="images/photo.jpg" alt="" />
-          {contentsix}
-        </div>
-        <div className="seven">
-          <img src="images/photo.jpg" alt="" />
-          {contentseven}
-        </div>
-        <div className="eight">{contenteight}</div>
+    <div className="contener">
+      <div className="one">{contentone}</div>
+      <h1 className="title">FAKESCHOOL</h1>
+      <div className="two">{contenttwo}</div>
+      <div className="tree">
+        <img src="{contentimagetree}" alt="" />
+        {contenttree}
       </div>
+      <div className="for">
+        <img src="images/photo.jpg" alt="" />
+        {contentfor}
+      </div>
+      <div className="five">
+        <img src="images/photo.jpg" alt="" />
+        {contentfive}
+      </div>
+      <div className="six">
+        <img src="images/photo.jpg" alt="" />
+        {contentsix}
+      </div>
+      <div className="seven">
+        <img src="images/photo.jpg" alt="" />
+        {contentseven}
+      </div>
+      <div className="eight">{contenteight}</div>
+    </div>
   );
 }
 export default FakeSchool;
