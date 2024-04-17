@@ -6,10 +6,9 @@ function NavBar() {
       <div className="header">
         <nav className="nav container">
           <ul>
-            <li>Créer</li>
-            <li>Voir</li>
-            <li>Créer</li>
-            <li>Comprendre</li>
+            {/* <NavLink to="/Best Of">Best Of</NavLink>
+            <NavLink to="/Creer sa Fake News">Creer sa Fake News</NavLink>
+            <NavLink to="/Fake School">Fake School</NavLink> */}
             <button type="button" className="Connexion">
               Connexion
             </button>
