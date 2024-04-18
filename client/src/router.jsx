@@ -5,11 +5,10 @@ import App from "./App";
 
 import Sniper from "./pages/Sniper";
 import UserConnection from "./pages/UserConnection";
-
+import FakeSchool from "./pages/FakeSchool";
 // page components
 // import BestOf from "./pages/BestOf";
 // import Create from "./pages/Create";
-// import FakeSchool from "./pages/FakeSchool";
 
 // router creation
 
@@ -21,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Sniper />,
+      },
+      {
+        path: "fakeschool",
+        element: <FakeSchool />,
       },
       {
         path: "connexion",
