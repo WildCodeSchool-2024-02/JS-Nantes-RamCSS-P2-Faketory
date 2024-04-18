@@ -28,7 +28,7 @@ function UserConnection() {
         {newsArticle2 && (
           <div id="card2" className="card">
             <h4>
-              {username || "User Connection"}
+              {username || newsArticle2.name}
               {newsArticle2.title}
             </h4>
             <p>{newsArticle2.body}</p>
@@ -64,7 +64,7 @@ function UserConnection() {
         {newsArticle6 && (
           <div id="card3" className="card">
             <h4>
-              {username || "User Connection"}
+              {username || newsArticle6.name}
               {newsArticle6.title}
             </h4>
             <p>{newsArticle6.body}</p>
