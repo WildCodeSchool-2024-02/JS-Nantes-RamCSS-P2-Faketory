@@ -1,5 +1,5 @@
 import "../assets/css/grid.css";
-import "./sniper.css";
+import "../components/sniper.css";
 import "../assets/icomoon/style.css";
 
 function Sniper() {
