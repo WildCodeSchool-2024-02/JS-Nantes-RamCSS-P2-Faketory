@@ -1,4 +1,5 @@
 import "./NavBar.css";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -6,12 +7,11 @@ function NavBar() {
       <div className="header">
         <nav className="nav container">
           <ul>
-            {/* <NavLink to="/Best Of">Best Of</NavLink>
-            <NavLink to="/Creer sa Fake News">Creer sa Fake News</NavLink>
-            <NavLink to="/Fake School">Fake School</NavLink> */}
-            <button type="button" className="Connexion">
-              Connexion
-            </button>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/best-of">Best Of</NavLink>
+            <NavLink to="/create">Creer sa Fake News</NavLink>
+            <NavLink to="/fakeschool">Fake School</NavLink>
+            <NavLink to="/connexion">Connexion</NavLink>
           </ul>
         </nav>
       </div>
