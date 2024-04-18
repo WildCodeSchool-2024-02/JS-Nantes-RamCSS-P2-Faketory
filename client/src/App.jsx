@@ -1,9 +1,14 @@
-import UserConnection from "./components/UserConnection";
-
 import "./App.css";
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 function App() {
-  return <UserConnection />;
+  return (
+    <>
+      <NavBar />
+      <Outlet />
+    </>
+  );
 }
 
 export default App;

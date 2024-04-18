@@ -1,12 +1,16 @@
+import "../assets/css/grid.css";
+import "../components/sniper.css";
+import "../assets/icomoon/style.css";
+
 function Sniper() {
   return (
-    <figure className="card">
+    <figure className="card-news">
       <img src="../../public/images/gabriel-attal.jpg" alt="gabriel-attal" />
       <figcaption>
         Gabriel Attal se réveille en sursaut, persuadé qu’un chômeur se cache
         sous son lit
       </figcaption>
-      <div className="container">
+      <div className="container-buttons d-md-flex justify-content-md-between">
         <button type="button" id="btn_false" className="btn-rond">
           <span
             className="icon-uncheck"
