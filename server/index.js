@@ -1,18 +1,19 @@
 const express = require('express');
-const fs = require('fs');
 
 const app = express();
+const port = 2000;
 
-app.get('/', (req, res) => {
-    fs.readFile('Fakenews.json', (err, data) => {
-        if (err) {
-            res.status(500).send('Error reading file');
-            return;
-        }
-        res.json(JSON.parse(data));
+const newsData = require('./Fakenews.json');
+
+app.get('/api/news', (req, res) => {
+    res.json(newsData);
+});
+
+app
+    .listen(port, () => {
+        console.info(`Server is listening on port ${port}`);
+    })
+
+    .on("error", (err) => {
+        console.error("Error:", err.message);
     });
-});
-
-app.listen(3000, () => {
-    console.warn('Server started on http://localhost:3000');
-});

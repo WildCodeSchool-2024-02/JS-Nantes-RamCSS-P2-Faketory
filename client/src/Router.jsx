@@ -5,6 +5,8 @@ import App from "./App";
 import Sniper from "./pages/Sniper";
 import UserConnection from "./pages/UserConnection";
 import FakeSchool from "./pages/FakeSchool";
+import BestOf from "./pages/BestOf";
+import Create from "./pages/Create";
 // page components
 // import BestOf from "./pages/BestOf";
 // import Create from "./pages/Create";
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Sniper />,
+      },
+      {
+        path: "best-of",
+        element: <BestOf />,
+      },
+      {
+        path: "create",
+        element: <Create />,
       },
       {
         path: "fakeschool",
