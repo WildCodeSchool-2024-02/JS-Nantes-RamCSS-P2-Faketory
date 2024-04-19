@@ -1,50 +1,42 @@
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-
-import NavBar2 from "./components/NavBar2";
+import { createBrowserRouter } from "react-router-dom";
 import Sniper from "./pages/Sniper";
 import UserConnection from "./pages/UserConnection";
 import FakeSchool from "./pages/FakeSchool";
+import Create from "./pages/Create";
+import BestOf from "./pages/BestOf";
+
+
+import App from "./App";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: (
-            <>
-                <NavBar2 />
-                <main>
-                    <Sniper />
-                </main>
-            </>
-        ),
-    },
-    {
-        path: "/fakeschool",
-        element: (
-            <>
-                <NavBar2 />
-                <main>
-                    <FakeSchool />
-                </main>
-            </>
-        ),
-    },
-    {
-        path: "/connexion",
-        element: (
-            <>
-                <NavBar2 />
-                <main>
-                    <UserConnection />
-                </main>
-            </>
-        ),
+        element: <App />,
+        children: [
+            {
+                path: "",
+                element: <Sniper/>,
+            },
+            {
+                path: "create",
+                element: <Create />,
+            },
+            {
+                path: "best-of",
+                element: <BestOf />,
+            },
+            {
+                path: "fakeschool",
+                element: <FakeSchool />,
+            },
+            {
+                path: "connexion",
+                element: <UserConnection />,
+            },
+        ],
     },
 ]);
 
-// eslint-disable-next-line import/prefer-default-export
-export function AppRouter() {
-  return <RouterProvider router={router} />
-}
+export default router;
