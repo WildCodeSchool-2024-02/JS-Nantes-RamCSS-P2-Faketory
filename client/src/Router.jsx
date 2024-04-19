@@ -1,5 +1,4 @@
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 
@@ -10,7 +9,7 @@ import FakeSchool from "./pages/FakeSchool";
 // import BestOf from "./pages/BestOf";
 // import Create from "./pages/Create";
 
-// router creation
+// router cre
 
 const router = createBrowserRouter([
   {
@@ -32,24 +31,5 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
-// rendering
-
-// {
-//   path: "/best-of",
-//   element: <BestOf/>,
-// },
-// {
-//   path: "/create",
-//   element: <Create/>,
-// },
-// {
-//   path: "/fakeschool",
-//   element: <FakeSchool/>,
-// },
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
-);
 
 export default router;
