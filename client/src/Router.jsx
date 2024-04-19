@@ -33,21 +33,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-// rendering
-
-// {
-//   path: "/best-of",
-//   element: <BestOf/>,
-// },
-// {
-//   path: "/create",
-//   element: <Create/>,
-// },
-// {
-//   path: "/fakeschool",
-//   element: <FakeSchool/>,
-// },
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
