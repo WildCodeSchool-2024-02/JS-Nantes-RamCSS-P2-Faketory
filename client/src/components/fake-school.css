@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background: #000;
+}
+
 .contener {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13,19 +17,22 @@
 }
 
 .contener > article {
-  background: var(--white);
+  background: #ebebeb;
   padding: 5px;
-  color: var(--black);
-}
-
-.contener > article > p {
-  color: var(--black);
+  color: #000;
 }
 
 .contener > article > h2 {
   font-size: 1em;
-  color: var(--black);
 }
+
+/* h1 {
+  background: #000;
+  color: #ebebeb;
+  text-align: center;
+  align-content: center;
+  font-size: 4cap;
+} */
 
 .one {
   grid-column: 1/2;
@@ -35,8 +42,8 @@
 .title {
   grid-column: 2/2;
   grid-row: 1/1;
-  background: var(--black);
-  color: var(--white);
+  background: #000;
+  color: #ebebeb;
   text-align: center;
   align-content: center;
   font-size: 4cap;

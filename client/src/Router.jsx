@@ -1,42 +1,40 @@
-
-import { createBrowserRouter } from "react-router-dom";
-import Sniper from "./pages/Sniper";
-import UserConnection from "./pages/UserConnection";
-import FakeSchool from "./pages/FakeSchool";
-import Create from "./pages/Create";
-import BestOf from "./pages/BestOf";
-
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 
+import Sniper from "./pages/Sniper";
+import UserConnection from "./pages/UserConnection";
+import FakeSchool from "./pages/FakeSchool";
+// page components
+// import BestOf from "./pages/BestOf";
+// import Create from "./pages/Create";
+
+// router creation
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <App />,
-        children: [
-            {
-                path: "",
-                element: <Sniper/>,
-            },
-            {
-                path: "create",
-                element: <Create />,
-            },
-            {
-                path: "best-of",
-                element: <BestOf />,
-            },
-            {
-                path: "fakeschool",
-                element: <FakeSchool />,
-            },
-            {
-                path: "connexion",
-                element: <UserConnection />,
-            },
-        ],
-    },
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Sniper />,
+      },
+      {
+        path: "fakeschool",
+        element: <FakeSchool />,
+      },
+      {
+        path: "connexion",
+        element: <UserConnection />,
+      },
+    ],
+  },
 ]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);
 
 export default router;
