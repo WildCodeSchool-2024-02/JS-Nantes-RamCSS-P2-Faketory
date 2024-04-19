@@ -1,22 +1,18 @@
-// Load environment variables from .env file
-require("dotenv").config();
+const express = require('express');
+const fs = require('fs');
 
-// Check database connection
-// Note: This is optional and can be removed if the database connection
-// is not required when starting the application
-require("./database/client").checkConnection();
+const app = express();
 
-// Import the Express application from app/config.js
-const app = require("./app/config");
+app.get('/', (req, res) => {
+    fs.readFile('Fakenews.json', (err, data) => {
+        if (err) {
+            res.status(500).send('Error reading file');
+            return;
+        }
+        res.json(JSON.parse(data));
+    });
+});
 
-// Get the port from the environment variables
-const port = process.env.APP_PORT;
-
-// Start the server and listen on the specified port
-app
-  .listen(port, () => {
-    console.info(`Server is listening on port ${port}`);
-  })
-  .on("error", (err) => {
-    console.error("Error:", err.message);
-  });
+app.listen(3000, () => {
+    console.warn('Server started on http://localhost:3000');
+});

@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  background: #000;
-}
-
 .contener {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,17 +12,19 @@ body {
   margin: 0 auto;
 }
 
-.contener > div {
-  background: #ebebeb;
+.contener > article {
+  background: var(--white);
   padding: 5px;
+  color: var(--black);
 }
 
-h1 {
-  background: #000;
-  color: #ebebeb;
-  text-align: center;
-  align-content: center;
-  font-size: 4cap;
+.contener > article > p {
+  color: var(--black);
+}
+
+.contener > article > h2 {
+  font-size: 1em;
+  color: var(--black);
 }
 
 .one {
@@ -37,6 +35,11 @@ h1 {
 .title {
   grid-column: 2/2;
   grid-row: 1/1;
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  align-content: center;
+  font-size: 4cap;
 }
 
 .twoo {
