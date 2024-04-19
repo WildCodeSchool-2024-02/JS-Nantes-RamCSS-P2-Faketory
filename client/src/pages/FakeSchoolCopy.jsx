@@ -46,17 +46,17 @@ function FakeSchool() {
       picture: photo,
     },
     {
-      title: '"Chaîne", diffuser une fake news?',
+      title: "Quels sont les objectifs du site ?",
       classadapt: "seven",
       content:
-        "Ne pas faire suivre machinalement un message que l'on vous demande de transférer à tous vos correspondants fait partie des bonnes pratiques de l'Internet : c'est un acte civique, qui témoigne du respect que vous portez à vos contacts et qui permet notamment de lutter contre la pollution des boîtes aux lettres. Le simple fait de connaître l'existence des hoax aide déjà à ne plus tomber dans leur piège. D'autres conseils de Prévention permettent d'identifier plus facilement les hoax, voire de ne pas devenir soi-même l'auteur involontaire d'une nouvelle cyber-rumeur.",
+        "Un site peut avoir pour objectif de vendre, d'informer, de militer, de convaincre, de manipuler, de faire peur ou encore de faire le buzz. En fonction de l'objectif du site, l'information n'a pas la même pertinence.",
       picture: photo,
     },
     {
-      title: "Quelle est la nature du site?",
+      title: '"Les Chaînes" Risque de diffuser de la fake news ?',
       classadapt: "eight",
       content:
-        "Un blog, un site institutionnel, un média en ligne, un réseau social,..., la nature d'un site est aussi diverse que variée et peut apprendre beaucoup sur la qualité d'une information. C'est aussi le cas pour l'éditeur du site qui peut être un média détenu par un groupe français ou étranger, un parti politique, une entreprise, une association, un particulier...git",
+        "Ne pas faire suivre machinalement un message que l'on vous demande de transférer à tous vos correspondants fait partie des bonnes pratiques de l'Internet : c'est un acte civique, qui témoigne du respect que vous portez à vos contacts et qui permet notamment de lutter contre la pollution des boîtes aux lettres. Le simple fait de connaître l'existence des hoax aide déjà à ne plus tomber dans leur piège. D'autres conseils de Prévention permettent d'identifier plus facilement les hoax, voire de ne pas devenir soi-même l'auteur involontaire d'une nouvelle cyber-rumeur",
       picture: photo,
     },
   ];
