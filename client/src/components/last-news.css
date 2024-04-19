@@ -1,0 +1,29 @@
+.last-news-container {
+  padding: 1rem;
+  max-width: 350px;
+}
+.last-news {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+.last-news-img,
+.last-news-infos-line {
+  background-color: var(--grey-light);
+}
+
+.last-news-img {
+  height: 6rem;
+  width: 12rem;
+}
+.last-news-infos {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+.last-news-infos-line {
+  height: 10px;
+  width: 100%;
+}

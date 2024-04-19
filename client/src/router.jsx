@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 
-import Sniper from "./pages/Sniper";
+import Home from "./pages/Home";
 import UserConnection from "./pages/UserConnection";
 
 // page components
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Sniper />,
+        element: <Home />,
       },
       {
         path: "connexion",

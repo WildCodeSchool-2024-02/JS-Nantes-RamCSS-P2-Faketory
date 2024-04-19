@@ -1,11 +1,9 @@
-import "../assets/css/grid.css";
-import "../components/sniper.css";
-import "../assets/icomoon/style.css";
+import "./sniper.css";
 
 function Sniper() {
   return (
     <figure className="card-news">
-      <img src="../../public/images/gabriel-attal.jpg" alt="gabriel-attal" />
+      <img src="../../images/gabriel-attal.jpg" alt="gabriel-attal" />
       <figcaption>
         Gabriel Attal se réveille en sursaut, persuadé qu’un chômeur se cache
         sous son lit
