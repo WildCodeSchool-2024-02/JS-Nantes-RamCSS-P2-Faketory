@@ -21,7 +21,7 @@ function FakeSchool() {
       title: "Privilégier les sources d’informations reconnues",
       classadapt: "tree",
       content:
-        "Elles se repèrent avec avec des urls telles que .gouv.fr, .org, .asso.fr. Les blogs et sites personnels seront à regarder avec plus de vigilance.",
+        "Les sources d'une information sont primordiales pour déterminer sa crédibilité. L'origine d'un chiffre ou d'une citation, quand elle est mentionnée, permet au lecteur de s'y référer directement. Certains sites proposent des liens hypertextes renvoyant vers les sites sources.",
       picture: photo,
     },
     {
@@ -46,17 +46,17 @@ function FakeSchool() {
       picture: photo,
     },
     {
-      title: "titre7",
+      title: "Quels sont les objectifs du site ?",
       classadapt: "seven",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Illo quis molestiae quaerat sit voluptates officia. Voluptate eos natus voluptatum repellat qui corporis explicabo sapiente soluta veniam est, nulla iusto dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, aliquid facere! Magnam consectetur aspernatur error laudantium vero maxime maiorefugiat, reiciendis iusto itaque ad eius sequi ducimus autem quo qui.",
+        "Un site peut avoir pour objectif de vendre, d'informer, de militer, de convaincre, de manipuler, de faire peur ou encore de faire le buzz. En fonction de l'objectif du site, l'information n'a pas la même pertinence.",
       picture: photo,
     },
     {
-      title: "titre8",
+      title: '"Les Chaînes" Risque de diffuser de la fake news ?',
       classadapt: "eight",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Illo quismolestiae quaerat sit voluptates officia. Voluptate eos natus voluptatum repellat qui corporis explicabo sapiente soluta veniam est, nulla iusto dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, aliquid facere! Magnam consectetur aspernatur error laudantium vero maxime maiorefugiat, reiciendis iusto itaque ad eius sequi ducimus autem quo qui.",
+        "Ne pas faire suivre machinalement un message que l'on vous demande de transférer à tous vos correspondants fait partie des bonnes pratiques de l'Internet : c'est un acte civique, qui témoigne du respect que vous portez à vos contacts et qui permet notamment de lutter contre la pollution des boîtes aux lettres. Le simple fait de connaître l'existence des hoax aide déjà à ne plus tomber dans leur piège. D'autres conseils de Prévention permettent d'identifier plus facilement les hoax, voire de ne pas devenir soi-même l'auteur involontaire d'une nouvelle cyber-rumeur",
       picture: photo,
     },
   ];
