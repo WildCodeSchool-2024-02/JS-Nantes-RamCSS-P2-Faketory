@@ -6,12 +6,14 @@ import "./UserConnection.css";
 function UserConnection() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [newsArticle, setNewsArticle] = useState(null);
+  const [newsArticle2, setNewsArticle2] = useState(null);
+  const [newsArticle6, setNewsArticle6] = useState(null);
 
   useEffect(() => {
-    // eslint-disable-next-line no-shadow
-    const article = newsData.fakenews.find((article) => article.id === 2);
-    setNewsArticle(article);
+    const article2 = newsData.fakenews.find((article) => article.id === 2);
+    const article6 = newsData.fakenews.find((article) => article.id === 6);
+    setNewsArticle2(article2);
+    setNewsArticle6(article6);
   }, []);
 
   const handleSubmit = (event) => {
@@ -23,10 +25,13 @@ function UserConnection() {
       <h2>{username || "User Connection"}</h2>
       <h3> WELCOME </h3>
       <div id="cards" className="cards">
-        {newsArticle && (
+        {newsArticle2 && (
           <div id="card2" className="card">
-            <h4>{newsArticle.title}</h4>
-            <p>{newsArticle.body}</p>
+            <h4>
+              {username || newsArticle2.name}
+              {newsArticle2.title}
+            </h4>
+            <p>{newsArticle2.body}</p>
           </div>
         )}
 
@@ -56,14 +61,15 @@ function UserConnection() {
           </form>
         </div>
 
-        <div id="card3" className="card">
-          <h4>8 ans de prison pour {username || "Jacky LAMBROUILLE"}</h4>
-          <p>
-            “Neque porro quisquam est, ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-            labore et dolore magnam aliquam quaerat voluptatem.”
-          </p>
-        </div>
+        {newsArticle6 && (
+          <div id="card3" className="card">
+            <h4>
+              {username || newsArticle6.name}
+              {newsArticle6.title}
+            </h4>
+            <p>{newsArticle6.body}</p>
+          </div>
+        )}
       </div>
     </>
   );
