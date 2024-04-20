@@ -1,9 +1,14 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
-const port = 2000;
+const port = 3000;
 
 const newsData = require('./Fakenews.json');
+
+app.use(cors({
+    origin: 'http://localhost:3001'
+}));
 
 app.get('/api/news', (req, res) => {
     res.json(newsData);

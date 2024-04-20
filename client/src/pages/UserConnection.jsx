@@ -1,19 +1,25 @@
 import { useState, useEffect } from "react";
-import newsData from "../Fakenews.json";
-
 import "./UserConnection.css";
 
 function UserConnection() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [newsArticle2, setNewsArticle2] = useState(null);
-  const [newsArticle6, setNewsArticle6] = useState(null);
+  const [newsArticles, setNewsArticles] = useState([]);
 
   useEffect(() => {
-    const article2 = newsData.fakenews.find((article) => article.id === 2);
-    const article6 = newsData.fakenews.find((article) => article.id === 6);
-    setNewsArticle2(article2);
-    setNewsArticle6(article6);
+    fetch("http://localhost:3000/api/news")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setNewsArticles(data.fakenews);
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation: ", error);
+      });
   }, []);
 
   const handleSubmit = (event) => {
@@ -25,15 +31,17 @@ function UserConnection() {
       <h2>{username || "User Connection"}</h2>
       <h3> WELCOME </h3>
       <div id="cards" className="cards">
-        {newsArticle2 && (
-          <div id="card2" className="card">
-            <h4>
-              {username || newsArticle2.name}
-              {newsArticle2.title}
-            </h4>
-            <p>{newsArticle2.body}</p>
-          </div>
-        )}
+        {newsArticles
+          .filter((article) => article.id === 2)
+          .map((article) => (
+            <div id="card2" key={article.id} className="card">
+              <h4>
+                {username || article.name}
+                {article.title}
+              </h4>
+              <p>{article.body}</p>
+            </div>
+          ))}
 
         <div id="card1" className="card">
           <form onSubmit={handleSubmit}>
@@ -60,16 +68,17 @@ function UserConnection() {
             <a href="/register">Créer un compte</a>
           </form>
         </div>
-
-        {newsArticle6 && (
-          <div id="card3" className="card">
-            <h4>
-              {username || newsArticle6.name}
-              {newsArticle6.title}
-            </h4>
-            <p>{newsArticle6.body}</p>
-          </div>
-        )}
+        {newsArticles
+          .filter((article) => article.id === 6)
+          .map((article) => (
+            <div id="card3" key={article.id} className="card">
+              <h4>
+                {username || article.name}
+                {article.title}
+              </h4>
+              <p>{article.body}</p>
+            </div>
+          ))}
       </div>
     </>
   );
