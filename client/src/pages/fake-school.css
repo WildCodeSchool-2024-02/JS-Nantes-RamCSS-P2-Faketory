@@ -77,7 +77,6 @@
 .position4 {
   grid-column: 3/3;
   grid-row: 2/3;
-  display: flex;
 }
 
 .position4 > img {
@@ -89,7 +88,6 @@
 .position5 {
   grid-column: 2/2;
   grid-row: 4/5;
-  display: flex;
 }
 
 .position5 > img {
@@ -101,7 +99,6 @@
 .position6 {
   grid-column: 3/3;
   grid-row: 3/4;
-  display: flex;
 }
 
 .position6 > img {
