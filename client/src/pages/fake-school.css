@@ -27,7 +27,7 @@
   color: var(--black);
 }
 
-.one {
+.position0 {
   grid-column: 1/2;
   grid-row: 1 /1;
 }
@@ -42,75 +42,75 @@
   font-size: 4cap;
 }
 
-.twoo {
+.position1 {
   grid-column: 3/3;
   grid-row: 1/1;
 }
 
-.tree {
+.position2 {
   grid-column: 1/2;
   grid-row: 2/5;
 }
 
-.tree > img {
+.position2 > img {
   float: left;
   width: 50%;
   height: auto;
 }
 
-.for {
+.position3 {
   grid-column: 2/2;
   grid-row: 2/4;
 }
 
-.for > img {
+.position3 > img {
   float: left;
   width: 50%;
   height: auto;
 }
 
-.for:first-child {
+.position3:first-child {
   padding-left: 5px;
   width: 50px;
 }
 
-.five {
+.position4 {
   grid-column: 3/3;
   grid-row: 2/3;
   display: flex;
 }
 
-.five > img {
+.position4 > img {
   float: left;
   width: 156px;
   height: auto;
 }
 
-.six {
+.position5 {
   grid-column: 2/2;
   grid-row: 4/5;
   display: flex;
 }
 
-.six > img {
+.position5 > img {
   float: left;
   width: 50%;
   height: 50%;
 }
 
-.seven {
+.position6 {
   grid-column: 3/3;
   grid-row: 3/4;
   display: flex;
 }
 
-.seven > img {
+.position6 > img {
   float: left;
   width: 156px;
   height: auto;
 }
 
-.eight {
+.position7 {
   grid-column: 3/3;
   grid-row: 4/5;
 }
