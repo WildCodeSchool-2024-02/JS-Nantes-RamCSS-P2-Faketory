@@ -140,7 +140,7 @@ function UserConnection() {
             </button>
             {errorMessage && <p className="error">{errorMessage}</p>}
             <h5>Vous n'avez pas de compte ?</h5>
-            <button type="button" className="submit">
+            <button type="button" className="submit" onClick={() => navigate('/newuser')}>
               Créer un compte
             </button>
           </form>
