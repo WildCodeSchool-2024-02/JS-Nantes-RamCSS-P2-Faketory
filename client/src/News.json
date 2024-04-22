@@ -1,6 +1,6 @@
 [
   {
-    "a faire": "",
+    "status": "A faire",
     "id": 0,
     "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/iStock-172964901-2-1536x1024.jpg",
     "title": "Désormais électronique, la flamme olympique aura une saveur Fruit Du Dragon Pastèque Citron Vert Emeraude",
@@ -10,17 +10,17 @@
     "date": "2024-04-16T14:30:30"
   },
   {
-    "a faire": "",
+    "status": "fait",
     "id": 1,
-    "img": "https://www.legorafi.fr/wp-content/uploads/2024/03/iStock-1295533217-1536x864.jpg",
-    "title": "Climat – Selon une étude, l’enfer pourrait augmenter de 2 degrés d’ici 2050",
-    "body": "C’est un véritable vent de panique qui a gagné les 9 cercles de l’enfer. En cause, une possible augmentation de 2 degrés qui pourrait rapidement rendre le quotidien des suppliciés invivable. « C’est vrai que c’est inquiétant » nous confie soucieux Franz Steiner, un damné, occupé à se faire introduire des canoës dans l’urètre. « On n’a qu’une seule éternité et c’est à nous d’en prendre soin ! » ajoute-t-il, pendant qu’un autre démon cornu lui arrache les dents à la truelle en lui faisant écouter en boucle la discographie d’Indochine.\n\nPour lutter contre ce réchauffement insupportable, plusieurs mesures ont déjà été mises en place au Royaume de Belzébuth. Tout d’abord, réduire de moitié l’intensité des coups de fourche pour limiter le CO2 expulsé par les damnés en hurlant. Mais également privilégier les douches de magma à la place des bains de lave, et diminuer la consommation de viande de l’Enfer en ne donnant plus à Cerbère que des légumes tels que des endives, des choux-fleurs, ou Stephen Hawking.\n\nDeux degrés de plus. Une perspective inquiétante qui ne semble pourtant pas préoccuper tout le monde. « Tout ça ce sont des conneries ! » s’exclame hilare Elizabeth Monot, damnée de classe 3. « Si le réchauffement climatique était réel, vous croyez qu’il ferait seulement 4900 degrés en mars ? » poursuit-elle en nous tendant un thermomètre intégralement fondu. « Et puis quand bien même, entre nous, deux petits degrés de plus, ce n’est quand même pas la mort » conclut-elle, avant de se jeter dans une mare de lave en fusion en hurlant de plaisir.",
-    "author": "La rédaction",
+    "img": "https://s.france24.com/media/display/504bf5d6-fcc3-11ee-90b5-005056a90284/w:980/p:16x9/000_34LH2CJ.webp",
+    "title": "Pourquoi la baisse de la pollution de l'air aggrave le réchauffement de la planète",
+    "body": "Enfin une bonne nouvelle sur le front de l'environnement : l'air que nous respirons est de moins en moins pollué. Depuis une trentaine d'années, de nouvelles réglementations dans l'industrie et le secteur automobile ont conduit à une basse considérable des émissions polluantes nocives pour la santé humaine : dioxyde de soufre et d’azote, ozone, métaux lourds (notamment le plomb) ou encore particules en suspension. Mais – car il y a un \"mais\" – une partie de ces émissions ont un effet refroidissant sur notre planète. Le phénomène est connu depuis les années 1970 mais la communauté scientifique commence seulement à être en mesure de le quantifier précisément. \n\n Une pollution qui réfléchit la lumière \n\n En suspension dans l’air, les particules polluantes réfléchissent la lumière du soleil vers l’espace, ce qui tend à réduire le réchauffement climatique. Le dioxyde de soufre (SO2) est l'un des responsables de ces nombreuses particules en suspension rendant les températures mondiales plus fraîches. \n\n \n\n \"Le dioxyde de soufre est un gaz. En tant que tel, il ne fait rien. Mais il subit des transformations chimiques dans l'atmosphère et se transforme en sulfates que l'on retrouve sous forme de particules de quelques dixièmes de micromètre. Ce sont ces particules qui vont interagir avec le rayonnement solaire et le renvoyer dans toutes les directions, notamment vers l'espace\", explique Olivier Boucher.",
+    "author": "Grégoire SAUVAGE",
     "section": "Science",
-    "date": "2024-03-16T14:30:30"
+    "date": "2024-04-17T18:19:30"
   },
   {
-    "a faire": "",
+    "status": "A faire",
     "id": 2,
     "img": "https://www.legorafi.fr/wp-content/uploads/2023/11/iStock-1372307856.jpg",
     "name": "Un astronaute",
@@ -31,17 +31,17 @@
     "date": "2023-11-28T08:00:00"
   },
   {
-    "a faire": "",
+    "status": "fait ",
     "id": 3,
-    "img": "https://www.legorafi.fr/wp-content/uploads/2024/03/iStock-1329507356-1536x1024.jpg",
-    "title": "Paris 2024 : de l’eau du Gange sera versée dans la Seine pour l’assainir",
-    "body": "A quelques mois des jeux, Anne Hidalgo a annoncé que de l’eau du Gange serait versée dans la Seine pour l’assainir. “L’état de la Seine est trop fluctuant pour pouvoir garantir qu’elle sera praticable cet été”, a annoncé la maire de Paris en conférence de presse. “L’Inde a donc généreusement proposé son aide et nous livrera une tonne d’eau du Gange que nous verserons dans la Seine pour l’assainir”. \n\nDes hydravions feront le trajet de la ville de Varanasi en Inde, à Paris, pour verser l’eau du Gange directement dans la Seine. La France a proposé en échange, de verser une tonne d’eau de la Seine, mais le pays a refusé. “C’est avec plaisir que nous venons en aide à nos amis Français. Nous n’attendons rien en retour et surtout pas leur eau polluée”, s’est exclamé le Consul d’Inde. ",
-    "author": "La rédaction",
+    "img": "https://bulletindescommunes.net/wp-content/uploads/2018/01/la-seine-nettoy%C3%A9e.jo_-600x326.jpg",
+    "title": "Grand nettoyage : Vers une Seine propre pour les Jeux Olympiques de 2024",
+    "body": "Paris se prépare activement pour les Jeux Olympiques de 2024 avec un projet spécial : nettoyer la Seine. Le plan est ambitieux, mais essentiel pour que les eaux soient sûres pour les épreuves de triathlon. \n\n \n\n Résultat d’image pour Jeux Olympiques de 2024. Taille: 126 x 88. Source: www.gqmagazine.fr \n\n \n\n Ce n’est pas un nouveau rêve ; il a été évoqué en 1988, mais cette fois, il est pris au sérieux. De nouvelles méthodes pour traiter les eaux usées et les déchets vont être mises en place, marquant un grand pas vers la réalisation de cet objectif. \n\n \n\n Depuis des décennies, la propreté de la Seine est un sujet de préoccupation et de promesse politique. La vision d’athlètes nageant lors des compétitions olympiques dans des eaux saines et accueillantes est un objectif longtemps convoité, mais jamais réalisé jusqu’à présent.",
+    "author": "Laurence LAPORTE",
     "section": "Sport",
-    "date": "2024-03-26T10:30:30"
+    "date": "2023-10-23T15:31:00"
   },
   {
-    "a faire": "",
+    "status": "A faire",
     "id": 4,
     "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/1H0U9tMh-1536x1024.jpg",
     "title": "Gabriel Attal se réveille en sursaut, persuadé qu’un chômeur se cache sous son lit",
@@ -51,17 +51,17 @@
     "date": "2024-04-03T10:00:80"
   },
   {
-    "a faire": "",
+    "status": "Fait",
     "id": 5,
-    "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/iStock-1893370293-1536x1024.jpg",
-    "title": "Boeing cesse son partenariat avec LEGO pour la construction de ses 737",
-    "body": "C’est la fin d’un des couples les plus emblématiques qui aura fait souffler un vent de renouveau sur l’industrie aéronautique. Boeing et Lego viennent d’annoncer comme d’un accord la fin d’une collaboration de plus de dix ans. La faute à de nombreuses avaries qui ont touché ces derniers mois plusieurs appareils fabriqués à partir des petites briques et issus des usines Boeing.\n\nIl faut dire qu’il y avait de l’eau dans de gaz, chaque partie se renvoyant la balle et la responsabilité des derniers accidents impliquant des 737. Déjà en janvier, les deux groupes se rejetaient mutuellement la faute après l’arrachage d’une porte en plein vol. Quand Dave Calhoun, PDG de Boeing, reprochait à LEGO un défaut de fabrication de ses briques, son homologue Danois Niels Christiansen le renvoyait aux défaillances de ses propres équipes lors de la lecture et de l’application des notices de montage.\n\nDu côté des usagers, de plus en plus préoccupés par la fiabilité des appareils, on oscille entre soulagement et déception. « J’ai offert un 737 à monter soi-même à mon fils de huit ans pour Noël. Aujourd’hui, il en a seize et n’a toujours pas réussi à terminer le montage » déclare un fan de la firme LEGO qui ne cache pas son inquiétude et sa tristesse de « ne jamais voir un jour son fils aux commandes de son propre avion ».",
-    "author": "La rédaction",
+    "img": "https://pbs.twimg.com/media/GDINiczaUAADJRN?format=jpg&name=900x900",
+    "title": "Porte arrachée en vol sur un Boeing : un rapport accablant et une demande d’indemnités colossale",
+    "body": "",
+    "author": "Ouest-France",
     "section": "Polémique",
-    "date": "2024-04-09T14:00:30"
+    "date": "2024-03-06T14:35:30"
   },
   {
-    "a faire": "",
+    "status": "A faire",
     "id": 6,
     "img": "https://www.legorafi.fr/wp-content/uploads/2024/02/Capture-decran-2024-02-20-a-09.30.14-1536x805.png",
     "name": "Gérard Larcher",
@@ -72,7 +72,7 @@
     "date": "2024-02-20T10:00:30"
   },
   {
-    "a faire": "",
+    "status": "A faire",
     "id": 7,
     "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/iStock-1445922202-1536x1024.jpg",
     "title": "Émile – L’enquête relancée après la découverte de restes de déontologie journalistique",
@@ -82,7 +82,7 @@
     "date": "2024-04-02T18:30:30"
   },
   {
-    "a faire": "",
+    "status": "A faire",
     "id": 8,
     "img": "https://www.legorafi.fr/wp-content/uploads/2024/03/iStock-157591769-1536x1001.jpg",
     "title": "Pour montrer son ouverture d’esprit, la Russie envoie 30 000 homosexuels sur le front ukrainien",
@@ -92,12 +92,12 @@
     "date": "2024-03-27T10:30:30"
   },
   {
-    "a faire": "",
+    "status": "Fait",
     "id": 9,
-    "img": "https://www.legorafi.fr/wp-content/uploads/2023/12/thermometer-1539191_1920-1536x1024.jpg",
-    "title": "Pénurie de médicaments – Le gouvernement recommande de mettre une gousse d’ail sous son oreiller",
-    "body": "C’est dans un communiqué officiel du ministère de la Santé que le ministre Aurélien Rousseau a conseillé aux Français de privilégier les « remèdes de grand-mère » pour surmonter la pénurie de médicaments. Mais un autre communiqué a été envoyé aux pharmacies, comme nous le raconte François, pharmacien du Ve arrondissement de Paris : « J’ai halluciné ! C’est marqué noir sur blanc qu’on doit conseiller aux clients, à qui on ne peut pas fournir de l’Amoxicilline et du Paracétamol, de mettre une gousse d’ail sous leur oreiller ! ». \n\nDes consignes du ministère qui mettent Samantha, DRH de 42 ans, en colère : « J’ai eu un début d’appendicite et on m’a dit de boire de l’eau chaude avec du citron, de la cannelle, du curcuma et de manger une cuillère de miel. J’ai fait confiance… et j’ai terminé à l’hôpital ! J’ai failli y passer ! » soupire la jeune femme en croquant dans une badiane : « On m’a donné ça contre les maux de ventre ». \n\nDu côté du ministère, on se refuse à tout commentaire. Cependant, une source anonyme, proche du ministre Rousseau, nous confie qu’un budget va être débloqué pour pallier les ruptures de stock en envoyant des guérisseurs et marabouts dans les pharmacies. ",
-    "author": "La rédaction",
+    "img": "https://fyooyzbm.filerobot.com/v7/Image+RCAXXQ601_SB_PENURIE+DE+MEDICAMENTS-Z57VTJsG.jpg",
+    "title": "Une nouvelle stratégie pour lutter contre les pénuries de médicaments",
+    "body": "Afin de mieux faire face aux tensions d’approvisionnement en médicaments, Roland Lescure, ministre délégué chargé de l’Industrie et de l’Énergie, Catherine Vautrin, ministre du Travail, de la Santé et des Solidarités, et Frédéric Valletoux, ministre délégué chargé de la Santé et de la Prévention, ont présenté la feuille de route 2024-2027 de lutte contre les pénuries de médicaments. \n\n \n\n L’accès des Français aux médicaments sur l’ensemble du territoire mobilise le Gouvernement. Les ministères chargés de la Santé et de l’Industrie ont entrepris des travaux dès 2019 pour mettre en place des mesures destinées à renforcer la prévention de pénuries pour les médicaments, en particulier pour ceux qualifiés d’intérêt thérapeutique majeur (MITM). \n\n \n\n L’Agence nationale de sécurité du médicament et des produits de santé (ANSM) définit les médicaments d’intérêt thérapeutique majeur comme les médicaments ou classes de médicaments pour lesquels une interruption de traitement est susceptible de mettre en jeu le pronostic vital des patients à court ou moyen terme.",
+    "author": "Site du gouvernement",
     "section": "Science",
     "date": "2023-12-19T06:30:30"
   }

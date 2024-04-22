@@ -32,7 +32,15 @@ function FakeSchool() {
   const classindex = "position";
   return (
     <section className="contener">
-      <h1 className="title">Fake School</h1>
+      <article id="title">
+        <h1>Fake School</h1>
+        <p>
+          De nos jours avec internet et les réseaux sociaux on peut faire dire
+          ce que l'on veux à qui on veux.
+          <br />
+          Caius Julius Caesar
+        </p>
+      </article>
       {thisArray.map((value, index) => (
         <article key={value.title} className={classindex + index}>
           <h2>{value.title}</h2>
