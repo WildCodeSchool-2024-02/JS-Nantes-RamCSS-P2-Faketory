@@ -7,11 +7,23 @@ function NavBar() {
       <img src="./images/logo-faketory.svg" alt="logo faketory" />
       <nav className="nav container">
         <ul>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/best-of">Best Of</NavLink>
-          <NavLink to="/create">Creer sa Fake News</NavLink>
-          <NavLink to="/fakeschool">Fake School</NavLink>
-          <NavLink to="/connexion">Connexion</NavLink>
+          <li>
+            <NavLink className="lien" to="/">
+              Home
+            </NavLink>
+          </li>
+          <NavLink className="lien" to="/best-of">
+            Best Of
+          </NavLink>
+          <NavLink className="lien" to="/create">
+            Creer sa Fake News
+          </NavLink>
+          <NavLink className="lien" to="/fakeschool">
+            Fake School
+          </NavLink>
+          <NavLink className="lien" to="/connexion">
+            Connexion
+          </NavLink>
         </ul>
       </nav>
     </header>
