@@ -8,7 +8,7 @@ const fs = require('fs');
 const bcrypt = require('bcrypt');
 
 const app = express();
-const port = 3000;
+const port = 4001;
 
 const newsData = require('./Fakenewsnom.json');
 
@@ -16,9 +16,7 @@ const users = require('./users.json');
 
 app.use(bodyParser.json());
 
-app.use(cors({
-    origin: 'http://localhost:3001'
-}));
+app.use(cors({ origin: '*' }));
 
 app.get('/api/fakenewsnom', (req, res) => {
     res.json(newsData);
@@ -70,9 +68,10 @@ app.post('/api/users', (req, res) => {
         });
     }
 });
-app.listen(port, () => {
-    console.info(`Server is listening on port ${port}`);
-})
-    .on("error", (err) => {
-        console.error("Error:", err.message);
-    });
+app.listen(port, (err) => {
+    if (err) {
+        console.error("Error:", err);
+    } else {
+        console.info(`Server is listening on port ${port}`);
+    }
+});
