@@ -1,40 +1,122 @@
 import { useState, useEffect } from "react";
-import newsData from "../Fakenews.json";
-
+import { useNavigate } from "react-router-dom";
 import "./UserConnection.css";
+
+import Spinner from "../assets/svg-spinners--bars-scale.svg";
 
 function UserConnection() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [newsArticle2, setNewsArticle2] = useState(null);
-  const [newsArticle6, setNewsArticle6] = useState(null);
+  // eslint-disable-next-line no-unused-vars
+  const [newsArticles, setNewsArticles] = useState([]);
+  const [showFullTextCard2, setShowFullTextCard2] = useState(false);
+  const [showFullTextCard3, setShowFullTextCard3] = useState(false);
+  const [loadingCard2, setLoadingCard2] = useState(true);
+  const [loadingCard3, setLoadingCard3] = useState(true);
+  const [randomArticle2, setRandomArticle2] = useState(null);
+  const [randomArticle3, setRandomArticle3] = useState(null);
+  const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
-    const article2 = newsData.fakenews.find((article) => article.id === 2);
-    const article6 = newsData.fakenews.find((article) => article.id === 6);
-    setNewsArticle2(article2);
-    setNewsArticle6(article6);
+    fetch("http://localhost:3000/api/fakenewsnom")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setNewsArticles(data.fakenewsnom);
+        const randomIndex2 = Math.floor(
+          Math.random() * data.fakenewsnom.length
+        );
+        const randomIndex3 = Math.floor(
+          Math.random() * data.fakenewsnom.length
+        );
+        setRandomArticle2(data.fakenewsnom[randomIndex2]);
+        setRandomArticle3(data.fakenewsnom[randomIndex3]);
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation: ", error);
+      });
+
+    const delayCard2 = Math.random() * 2000 + 1000;
+    const delayCard3 = Math.random() * 2000 + 1000;
+
+    setTimeout(() => setLoadingCard2(false), delayCard2);
+    setTimeout(() => setLoadingCard3(false), delayCard3);
   }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    fetch("http://localhost:3000/api/auth", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        password,
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        localStorage.setItem("token", data.token);
+        console.warn(
+          "Authentication successful, token stored in localStorage:",
+          data.token
+        );
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation: ", error);
+        setErrorMessage("Échec de l'authentification. Veuillez réessayer.");
+      });
   };
 
   return (
     <>
-      <h2>{username || "User Connection"}</h2>
+      <h2 aria-label={username || "User Connection"}>
+        {username || "User Connection"}
+      </h2>
       <h3> WELCOME </h3>
       <div id="cards" className="cards">
-        {newsArticle2 && (
-          <div id="card2" className="card">
-            <h4>
-              {username || newsArticle2.name}
-              {newsArticle2.title}
-            </h4>
-            <p>{newsArticle2.body}</p>
+        {randomArticle2 && (
+          <div id="card2" key={randomArticle2.id} className="card">
+            {loadingCard2 ? (
+              <img id="spinner" src={Spinner} alt="Loading..." />
+            ) : (
+              <>
+                <div id="imageTitre">
+                  <img id="img2" src={randomArticle2.img} alt="Article" />
+                  <h4>
+                    {username || randomArticle2.name}
+                    {randomArticle2.title}
+                  </h4>
+                </div>
+                <p>
+                  {showFullTextCard2
+                    ? randomArticle2.body
+                    : `${randomArticle2.body.substring(0, 100)}...`}
+                </p>
+                <button
+                  className="plus"
+                  type="button"
+                  onClick={() => setShowFullTextCard2(!showFullTextCard2)}
+                >
+                  {showFullTextCard2 ? "Lire moins" : "Lire plus"}
+                </button>
+              </>
+            )}
           </div>
         )}
-
         <div id="card1" className="card">
           <form onSubmit={handleSubmit}>
             <label>
@@ -53,21 +135,43 @@ function UserConnection() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </label>
-            <button type="button" className="submit">
+            <button type="submit" className="submit">
               Se connecter
             </button>
+            {errorMessage && <p className="error">{errorMessage}</p>}
             <h5>Vous n'avez pas de compte ?</h5>
-            <a href="/register">Créer un compte</a>
+            <button type="button" className="submit" onClick={() => navigate('/newuser')}>
+              Créer un compte
+            </button>
           </form>
         </div>
-
-        {newsArticle6 && (
-          <div id="card3" className="card">
-            <h4>
-              {username || newsArticle6.name}
-              {newsArticle6.title}
-            </h4>
-            <p>{newsArticle6.body}</p>
+        {randomArticle3 && (
+          <div id="card3" key={randomArticle3.id} className="card">
+            {loadingCard3 ? (
+              <img id="spinner" src={Spinner} alt="Loading..." />
+            ) : (
+              <>
+                <div id="imageTitre">
+                  <img id="img3" src={randomArticle3.img} alt="Article" />
+                  <h4>
+                    {username || randomArticle3.name}
+                    {randomArticle3.title}
+                  </h4>
+                </div>
+                <p>
+                  {showFullTextCard3
+                    ? randomArticle3.body
+                    : `${randomArticle3.body.substring(0, 100)}...`}
+                </p>
+                <button
+                  className="plus"
+                  type="button"
+                  onClick={() => setShowFullTextCard3(!showFullTextCard3)}
+                >
+                  {showFullTextCard3 ? "Lire moins" : "Lire plus"}
+                </button>
+              </>
+            )}
           </div>
         )}
       </div>
