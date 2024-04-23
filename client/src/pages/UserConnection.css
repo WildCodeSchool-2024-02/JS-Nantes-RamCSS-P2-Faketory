@@ -2,47 +2,48 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 20px;
 }
 
 h2 {
   text-align: center;
-  color: #ffe7e7;
+  color: var(--blue);
   margin: 0;
   padding: 0;
-  font-family: "DM Sans", serif;
-}
-
-h2,
-h3,
-h5 {
-  text-align: center;
-  color: #ffe7e7;
-  margin: 0;
-  padding: 0;
-  font-family: "DM Sans", sans-serif;
-}
-
-h4 {
-  text-align: left;
-  color: #cecece;
-  margin: 0;
-  padding: 0;
-  font-family: "DM Sans", sans-serif;
-  font-size: 2rem;
-}
-
-h2 {
+  font-family: var(--font), sans-serif;
   font-size: 3rem;
 }
 
 h3 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
   font-size: 2rem;
 }
 
+h5 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 1rem;
+}
+
+h4 {
+  text-align: left;
+  color: var(--blue);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 1rem;
+}
+
 p {
-  color: #d7d7d7;
+  color: var(--black);
   margin: 0;
   padding: 0;
   font-size: 1rem;
@@ -54,8 +55,8 @@ p {
   align-items: center;
   justify-content: center;
   width: 400px;
-  background-color: rgba(40, 40, 40, 0);
-  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: var(--black);
+  border: 1px solid var(--white);
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
@@ -71,14 +72,21 @@ p {
   align-items: start;
   justify-content: center;
   width: 400px;
-  background-color: rgba(196, 196, 196, 0);
-  border: 1px solid rgba(222, 221, 221, 0);
+  background-color: var(--white);
+  border: 1px solid var(--black);
   border-radius: 5px;
   padding: 20px;
   margin: 10px;
   transition:
     background-color 0.2s ease,
     color 0.2s ease;
+}
+
+#spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
 }
 
 form {
@@ -113,11 +121,58 @@ input[type="submit"] {
 }
 
 .submit {
-  background-color: #ababab;
-  color: #753d3d;
+  background-color: var(--blue);
+  color: var(--black);
   border: none;
   border-radius: 5px;
   font-size: 1rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font), sans-serif;
   transition: background-color 0.2s ease;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.submit:hover {
+  background-color: var(--black);
+  color: var(--blue);
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 32px;
+  font-size: 0.8rem;
+  background-color: var(--black);
+  color: var(--blue);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.plus:hover {
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+#img2,
+#img3 {
+  width: 40%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#imageTitre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
 }
