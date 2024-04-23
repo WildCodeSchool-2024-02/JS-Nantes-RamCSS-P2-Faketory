@@ -51,7 +51,7 @@ function UserConnection() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:3000/api/auth", {
+    fetch("http://localhost:3001/api/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
