@@ -5,6 +5,7 @@ function NavBar() {
   return (
     <header>
       <div className="header">
+        <img src="./images/logo-faketory.svg" alt="" />
         <nav className="nav container">
           <ul>
             <NavLink to="/">Home</NavLink>

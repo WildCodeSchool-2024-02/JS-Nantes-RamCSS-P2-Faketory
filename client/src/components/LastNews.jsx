@@ -10,7 +10,24 @@ import "./last-news.css";
 function LastNews() {
   return (
     <aside className="last-news-container">
-      <figure className="last-news">
+      <h2>Les dernièrs actualités</h2>
+      <figure className="last-news animate-skeleton">
+        <div className="last-news-img" />
+        <div className="last-news-infos">
+          <div className="last-news-infos-line" />
+          <div className="last-news-infos-line" />
+          <div className="last-news-infos-line" />
+        </div>
+      </figure>
+      <figure className="last-news animate-skeleton">
+        <div className="last-news-img" />
+        <div className="last-news-infos">
+          <div className="last-news-infos-line" />
+          <div className="last-news-infos-line" />
+          <div className="last-news-infos-line" />
+        </div>
+      </figure>
+      <figure className="last-news animate-skeleton">
         <div className="last-news-img" />
         <div className="last-news-infos">
           <div className="last-news-infos-line" />
