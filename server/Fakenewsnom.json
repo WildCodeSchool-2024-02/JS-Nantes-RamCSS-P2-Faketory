@@ -1,0 +1,35 @@
+{
+  "fakenewsnom": [
+    {
+      "id": 0,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2023/11/iStock-1372307856.jpg",
+      "name": "Un astronaute",
+      "title": "  de la NASA perd son stagiaire pendant une sortie dans l’espace",
+      "body": "Un nouveau corps céleste a fait son apparition au-dessus de nos têtes ces dernières heures. Visible depuis la Terre, Jordan, un stagiaire qui accompagnait deux astronautes a été définitivement perdu au cours d’une mission. C’est au cours d’une sortie extra-véhiculaire visant à procéder à des réparations sur le pare-brise de la station qu’un des deux astronautes aurait « laissé échapper par inadvertance » son stagiaire, le laissant dériver en orbite autour de la Terre.\n\nMalgré plusieurs tentatives au lasso pour tenter de le récupérer, les astronautes ne sont pas parvenus à ramener à bord le stagiaire. La NASA précise dans un communiqué que ce dernier n’était cependant « pas essentiel pour le reste de la mission », précisant que le risque de dégâts restait minime en cas de collision avec la station.\n\nC’est le deuxième stagiaire perdu par la NASA depuis le début de l’année. Jordan 2, un autre stagiaire accompagnant l’équipage manque à l’appel depuis février. L’équipe de l’ISS serait toujours à sa recherche après avoir oublié de le remettre à sa place suite à des travaux de maintenance dans la station.",
+      "author": "La rédaction",
+      "section": "Science",
+      "date": "2023-11-28T08:00:00"
+    },
+    {
+      "id": 1,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/02/Capture-decran-2024-02-20-a-09.30.14-1536x805.png",
+      "name": "Gérard Larcher",
+      "title": "  veut inscrire le pâté de foie et les rillettes de veau dans la Constitution",
+      "body": "« Je suis favorable à l’inscription du pâté de foie et des rillettes de veau dans la Constitution » a déclaré Gérard Larcher ce matin au micro de BFM TV avant d’ajouter : « A l’heure où les Français sont divisés et sont parfois à la recherche d’identité, je pense qu’il est primordial de se rassembler autour des valeurs qui font l’honneur de la France. » Le président du Sénat a toutefois précisé qu’il n’était pas inflexible et ouvert au débat, « notamment sur les œufs mayo et le bœuf bourguignon ». En revanche, il s’est montré intraitable vis-à-vis des « véganes consommateurs de pousses de soja et de quinoa » qui sont pour lui « des traîtres à la nation » et pour qui il propose « la déchéance de nationalité ».\n\nHonorer notre mémoire commune\n\nInterrogé ensuite sur la panthéonisation de Missak Manouchian prévue ce mercredi, le président du Sénat a fait preuve d’un enthousiasme modéré : « Je suis très content que la mémoire de cet Arménien engagé, de ce résistant, de ce poète francophile soit honorée. Mais je dis simplement qu’il faut rester très sélectif et faire attention à l’avenir à ne pas faire rentrer tout le monde. » Puis de conclure : « Il faut garder de la place pour le foie gras du Sud-Ouest et les tripes à la mode de Caen. »",
+      "author": "La rédaction",
+      "section": "Politique",
+      "date": "2024-02-20T10:00:30"
+    },
+
+    {
+      "id": 2,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/1H0U9tMh-1536x1024.jpg",
+      "name": "Gabriel Attal",
+      "title": " se réveille en sursaut, persuadé qu’un chômeur se cache sous son lit",
+      "body": "\nSelon nos informations, le Premier Ministre a vécu une nuit agitée comme en témoigne une source proche de Matignon : « Le couché du prince s’était pourtant passé comme d’habitude. Son équipe de com venait de lui lire sa page Wikipédia pour l’endormir, Gabriel suçait son pouce et commençait même à ronfler. On est ensuite partis sur la pointe des pieds. Tout était normal. Mais deux heures après… on a eu la peur de notre vie… ». \n\nUn conseiller nous raconte avec effroi ce terrible moment : « On a entendu un énorme cri, j’ai immédiatement reconnu la voix de Gabriel. Il était debout sur son lit, il serrait son doudou très fort contre lui… et il pointait du doigt le dessous de son lit en criant : « un chômeur ! Un assisté ! Attention il y a une feignasse sous mon lit ! ». La sécurité et la police ont fouillé la chambre de fond en comble, heureusement ce n’était qu’un cauchemar. « On a tous eu si peur. Surtout Gabriel… il a même eu un petit accident » confie son collaborateur, gêné. \n\nNos sources sont depuis sur le qui-vive, prêt à intervenir si une telle terreur nocturne recommençait : « Désormais on prend les devants », raconte un de ses gardes du corps. « On l’endort en lui lisant les pages saumon du Figaro et on a exorcisé sa chambre avec une photo de Patrick Martin, le patron du Medef, au-dessus de son lit”. Après enquête, nous découvrons qu’ont été installés devant Matignon des pièges à chômeurs, des pièges à ours avec comme appât une télécommande, des écrans plats et des paquets de chips.",
+      "author": "La rédaction",
+      "section": "Politique",
+      "date": "2024-04-03T10:00:80"
+    }
+  ]
+}
