@@ -19,7 +19,7 @@ function UserConnection() {
   const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/fakenewsnom")
+    fetch("http://localhost:3001/api/fakenewsnom")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
