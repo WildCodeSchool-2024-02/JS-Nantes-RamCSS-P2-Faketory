@@ -1,15 +1,15 @@
 {
-  "name": "4play",
+  "name": "faketory",
   "version": "0.0.1",
   "private": true,
   "description": "",
-  "homepage": "https://github.com/{{ org }}/4play#readme",
+  "homepage": "https://github.com/{{ org }}/faketory#readme",
   "bugs": {
-    "url": "https://github.com/{{ org }}/4play/issues"
+    "url": "https://github.com/{{ org }}/faketory/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{ org }}/4play.git"
+    "url": "git+https://github.com/{{ org }}/faketory.git"
   },
   "workspaces": ["client", "server"],
   "scripts": {
