@@ -14,6 +14,7 @@ const users = require("./users.json");
 
 app.use(bodyParser.json());
 
+
 app.use(cors({ origin: "http://localhost:3000" }));
 
 app.get("/api/fakenewsnom", (req, res) => {
