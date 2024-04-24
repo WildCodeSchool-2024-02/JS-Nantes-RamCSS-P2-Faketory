@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./UserConnection.css";
-
 import Spinner from "../assets/svg-spinners--bars-scale.svg";
+import { UserConnectionContext } from '../Contextes/ConnectionContext';
 
 function UserConnection() {
   const [username, setUsername] = useState("");
@@ -18,8 +18,10 @@ function UserConnection() {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState(null);
 
+  const { handleLogin } = useContext(UserConnectionContext);
+
   useEffect(() => {
-    fetch("http://localhost:3000/api/fakenewsnom")
+    fetch("http://localhost:3001/api/fakenewsnom")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -50,35 +52,14 @@ function UserConnection() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    fetch("http://localhost:3000/api/auth", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username,
-        password,
-      }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        localStorage.setItem("token", data.token);
-        console.warn(
-          "Authentication successful, token stored in localStorage:",
-          data.token
-        );
-        navigate("/");
-      })
-      .catch((error) => {
-        console.error("There was a problem with the fetch operation: ", error);
-        setErrorMessage("Échec de l'authentification. Veuillez réessayer.");
-      });
+    handleLogin(username, password)
+        .then(() => {
+          navigate("/");
+        })
+        .catch((error) => {
+          console.error("There was a problem with the fetch operation: ", error);
+          setErrorMessage("Échec de l'authentification. Veuillez réessayer.");
+        });
   };
 
   return (
