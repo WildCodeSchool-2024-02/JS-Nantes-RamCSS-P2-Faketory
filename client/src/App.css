@@ -3,8 +3,11 @@
   --green: #44f440;
   --red: #d30303;
   --black: #211c1c;
-  --white: rgba(235, 235, 235, 0.7);
-  --font: dm-sans;
+  --white: #ebebeb;
+  --grey: #9b9b9b;
+  --grey-light: #d9d9d9;
+  --font: "DM Sans";
+  --font-weight-normal: 400;
 }
 
 body {
@@ -14,4 +17,113 @@ body {
   font-size: 16px;
   line-height: 1.7;
   margin: 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--white);
+  gap: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+  font-weight: var(--font-weight-normal);
+}
+
+h1:before,
+h1:after {
+  background-color: var(--white);
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  margin: auto;
+}
+
+/*-------ANIMATION---------*/
+@keyframes animate-apparition {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE---------*/
+/*-------------------------*/
+
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .animate-child-apparition > div {
+    position: relative;
+    opacity: 0;
+    animation-name: animate-apparition;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  .animate-child-apparition > div:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  .animate-child-apparition > div:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+  .animate-child-apparition > div:nth-child(3) {
+    animation-delay: 1.1s;
+  }
+  .animate-child-apparition > div:nth-child(4) {
+    animation-delay: 1.4s;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* h1 {
+      font-size: 4rem;
+  }
+
+  h2 {
+      font-size: 3rem;
+  }
+
+  h3 {
+      font-size: 2rem;
+  }
+
+  h4 {
+      font-size: 1.5rem;
+  } */
+}
+
+@media screen and (min-width: 1900px) {
 }
