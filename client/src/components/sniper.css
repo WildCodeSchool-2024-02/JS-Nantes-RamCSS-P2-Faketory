@@ -26,6 +26,20 @@
   border-radius: 50%;
   font-size: 2.5rem;
   color: var(--white);
+  cursor: pointer;
+}
+.btn-rond:focus {
+  outline: 3px solid var(--grey);
+}
+.btn-rond:active {
+  outline: 3px solid var(--black);
+}
+.btn-rond [class^="icon-"] {
+  transition: all 0.1s ease-out;
+  font-size: 1em;
+}
+.btn-rond:hover [class^="icon-"] {
+  font-size: 1.2em;
 }
 #btn_true {
   background-color: var(--blue);

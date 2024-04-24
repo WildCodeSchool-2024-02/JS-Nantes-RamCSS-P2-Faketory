@@ -1,11 +1,5 @@
 const express = require('express');
-// eslint-disable-next-line import/no-extraneous-dependencies
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const jwt = require('jsonwebtoken');
 const fs = require('fs');
-
-const bcrypt = require('bcrypt');
 
 const app = express();
 const port = 3001;
