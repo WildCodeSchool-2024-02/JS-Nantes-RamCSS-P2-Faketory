@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 
-import Sniper from "./pages/Sniper";
+import Home from "./pages/Home";
 import UserConnection from "./pages/UserConnection";
 import FakeSchool from "./pages/FakeSchool";
 import BestOf from "./pages/BestOf";
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Sniper />,
+        element: <Home />,
       },
       {
         path: "best-of",
