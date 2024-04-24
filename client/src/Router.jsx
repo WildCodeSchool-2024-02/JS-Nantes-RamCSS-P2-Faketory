@@ -9,10 +9,6 @@ import BestOf from "./pages/BestOf";
 import Create from "./pages/Create";
 import NewUser from "./pages/NewUser";
 // page components
-// import BestOf from "./pages/BestOf";
-// import Create from "./pages/Create";
-
-// router cre
 
 const router = createBrowserRouter([
   {
