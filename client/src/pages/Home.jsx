@@ -1,9 +1,11 @@
+// import { useState } from "react";
 import LastNews from "../components/LastNews";
-import Sniper from "./Sniper";
+import Sniper from "../components/Sniper";
 import "../assets/css/grid.css";
 import "../assets/icomoon/style.css";
 
 function Home() {
+  // const [addNews, setAddNews] = useState("");
   return (
     <div className="container-fluid mt-5">
       <div className="row animate-child-apparition">
