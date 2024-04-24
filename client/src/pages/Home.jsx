@@ -1,11 +1,11 @@
-// import { useState } from "react";
+import { useState } from "react";
 import LastNews from "../components/LastNews";
 import Sniper from "../components/Sniper";
 import "../assets/css/grid.css";
 import "../assets/icomoon/style.css";
 
 function Home() {
-  // const [addNews, setAddNews] = useState("");
+  const [addNews, setAddNews] = useState("");
   return (
     <div className="container-fluid mt-5">
       <div className="row animate-child-apparition">
@@ -13,10 +13,10 @@ function Home() {
           <h1>Quelle est la vraie actualité ?</h1>
         </div>
         <div className="col-md-6 text-center">
-          <Sniper />
+          <Sniper setAddNews={setAddNews} />
         </div>
         <div className="col-md-3">
-          <LastNews />
+          <LastNews addNews={addNews} />
         </div>
       </div>
     </div>
