@@ -6,7 +6,6 @@
 .contener {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
   gap: 5px;
   width: 70%;
   margin: 0 auto;

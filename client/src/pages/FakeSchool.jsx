@@ -3,16 +3,15 @@ import { useState, useEffect } from "react";
 import "./fake-school.css";
 
 function FakeSchool() {
-  const [donnees, setDonnees] = useState(null);
+  const [content, setContent] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3000/src/Fakeschool.json")
       .then((response) => response.json())
-      .then((data) => setDonnees(data));
+      .then((data) => setContent(data));
   }, []);
-  const content = donnees;
 
-  if (donnees === null) {
+  if (content.length === 0) {
     return "Chargement...";
   }
 
