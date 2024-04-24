@@ -22,13 +22,12 @@ function Footer() {
       <p>
         {" "}
         Copyright © - 2024 - Tous droits réservés. Politique de confidentialité
-        - Mentions légales.
+        - Mentions légales.{" "}
       </p>
 
       <span className="icon-return" />
-      <button type="button">
-        <img src="./images/logo-faketory.svg" alt="logo faketory" />
-      </button>
+
+      <img src="./images/logo-faketory.svg" alt="logo faketory" />
     </article>
   );
 }
