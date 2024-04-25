@@ -1,0 +1,15 @@
+.select-news {
+  display: block;
+  background: var(--black);
+  color: var(--white);
+}
+select-news > h1 {
+  font-size: 14px;
+}
+.selectnews .selectnews > article {
+  background: var(--white);
+  color: var(--black);
+}
+.selectnews > article > img {
+  width: 300px;
+}
