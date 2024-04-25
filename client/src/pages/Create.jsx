@@ -1,13 +1,13 @@
+import { useState, useEffect, useContext} from "react";
+import { useNavigate } from 'react-router-dom';
+import { UserConnectionContext } from '../Contextes/ConnectionContext';
 
-
-import { useState, useEffect} from "react";
 
 import "./UserConnection.css";
 import Spinner from "../assets/svg-spinners--bars-scale.svg";
 
 
 function Create() {
-
   const [newsTitle, setNewsTitle] = useState("");
   const [newsText, setNewsText] = useState("");
   // eslint-disable-next-line no-unused-vars
@@ -18,10 +18,12 @@ function Create() {
 
   const [randomArticle2, setRandomArticle2] = useState(null);
 
+  const navigate = useNavigate();
+  const { isConnected } = useContext(UserConnectionContext);
 
-
-
-
+  if (!isConnected) {
+    navigate('/connexion');
+  }
   useEffect(() => {
     fetch("http://localhost:3001/api/fakenews")
       .then((response) => {
@@ -50,8 +52,6 @@ function Create() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-
     const newNews = {
       id: randomArticle2.id,
       img: randomArticle2.img,
