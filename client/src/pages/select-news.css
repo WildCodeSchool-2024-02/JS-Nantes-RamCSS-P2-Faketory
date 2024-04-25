@@ -4,12 +4,37 @@
   color: var(--white);
 }
 select-news > h1 {
-  font-size: 14px;
+  font-size: 2rem;
 }
-.selectnews .selectnews > article {
+select-news > h2 {
+  background: var(--black);
+  color: var(--white);
+}
+
+.selectnews {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.selectnews > article {
   background: var(--white);
   color: var(--black);
+  width: 550px;
+  text-align: center;
+  padding: 25px 0;
 }
 .selectnews > article > img {
-  width: 300px;
+  width: 500px;
+}
+
+.selectnews > article > h2 {
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.selectnews > article > p {
+  font-size: 1rem;
+  text-align: left;
 }

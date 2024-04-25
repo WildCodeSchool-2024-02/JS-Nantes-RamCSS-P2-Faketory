@@ -24,9 +24,18 @@ function SelectNews() {
       <section className="selectnews">
         <article>
           <img src={content[0].img} alt="" />
+          <p>
+            {content[0].name}
+            <h2>{content[0].title}</h2>
+          </p>
         </article>
         <article>
           <img src={content[0].img} alt="" />
+          <h2>
+            {content[2].name}
+            {content[2].title}
+          </h2>
+          <p>{content[2].body}</p>
         </article>
       </section>
     </>
