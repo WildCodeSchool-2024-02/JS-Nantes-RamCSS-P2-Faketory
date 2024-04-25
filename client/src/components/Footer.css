@@ -1,34 +1,52 @@
-article {
+.footer {
   background-color: white;
   font-family: var(--font), sans-serif;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .container {
-  display: grid, inline-grid;
+  /* display: grid, inline-grid; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
 .contact {
-  display: inline-grid;
   flex-direction: column;
-  gap: 2px;
+  gap: 0;
+  list-style: none;
+  /* display: inline-grid;
+  flex-direction: column;
+  gap: 2px; */
 }
 
 .navigation {
-  display: inline-grid;
   flex-direction: column;
-  gap: 2px;
+  gap: 0;
+  list-style: none;
+  /* display: inline-grid;
+  flex-direction: column;
+  gap: 2px;*/
 }
 
 img {
   float: right;
-  margin-top: -20px;
+  /* margin-top: -17px; */
+  margin-left: -5px;
 }
 
 .icon-return {
+  background-color: white;
   float: right;
   border-radius: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-p {
-  text-align: center;
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }

@@ -6,7 +6,7 @@ function NavBar() {
     <header className="header">
       <img src="./images/logo-faketory.svg" alt="logo faketory" />
       <nav className="nav container">
-        <ul>
+        <ul className="header-ul">
           <NavLink className="lien" to="/best-of">
             Best Of
           </NavLink>

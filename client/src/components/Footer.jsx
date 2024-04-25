@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <article>
+    <article className="footer">
       <div className="container">
         <ul className="contact">
           <li> Contact </li>
@@ -21,14 +21,19 @@ function Footer() {
           <li> Connexion </li>
         </ul>
 
-        {/* <button className="icon-return" type="button"/> */}
+        <div className="logo">
+          <button type="button" id="haut de page" className="icon-return">
+            <span aria-label="Revenir en haut de la page" />
+          </button>
 
-        <img src="./images/logo-faketory.svg" alt="logo faketory" />
-
-        <p>
-          Copyright © - 2024 - Tous droits réservés. Politique de
-          confidentialité - Mentions légales.
-        </p>
+          {/* <button className="icon-return" /> */}
+          <img src="./images/logo-faketory.svg" alt="logo faketory" />
+          <p>
+            {" "}
+            Copyright © - 2024 - Tous droits réservés. Politique de
+            confidentialité - Mentions légales.
+          </p>
+        </div>
       </div>
     </article>
   );

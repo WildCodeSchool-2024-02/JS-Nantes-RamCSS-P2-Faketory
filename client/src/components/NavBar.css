@@ -1,16 +1,17 @@
 header {
   margin-top: 20px;
+  height: 99px;
   display: flex;
   align-items: center;
   flex-direction: row;
   background-color: white;
 }
 
-ul {
+.header-ul {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 100px;
   list-style: none;
 }
 
