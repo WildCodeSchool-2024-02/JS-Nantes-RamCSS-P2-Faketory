@@ -9,16 +9,21 @@ const app = express();
 const port = 3001;
 
 const newsData = require("./Fakenewsnom.json");
+const newsData2 = require("./Fakenews.json");
+
 
 const users = require("./users.json");
 
 app.use(bodyParser.json());
 
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: '*' }));
 
 app.get("/api/fakenewsnom", (req, res) => {
   res.json(newsData);
+});
+app.get("/api/fakenews", (req, res) => {
+  res.json(newsData2);
 });
 
 app.post("/api/auth", (req, res) => {
@@ -69,6 +74,40 @@ app.post("/api/users", (req, res) => {
     });
   }
 });
+
+app.post('/api/usernews', (req, res) => {
+
+  const newNews = req.body;
+
+
+  fs.readFile('server/UserNews.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading file:', err);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+
+
+    const userNews = JSON.parse(data);
+
+
+    userNews.newNews.push(newNews);
+
+
+    fs.writeFile('server/UserNews.json', JSON.stringify(userNews), (err) => {
+      if (err) {
+        console.error('Error writing file:', err);
+        return res.status(500).json({ error: 'Internal Server Error' });
+      }
+
+
+      res.json({ message: 'News posted successfully' });
+    });
+  });
+});
+
+
+
+
 app.listen(port, (err) => {
   if (err) {
     console.error("Error: ça marche pas", err);
