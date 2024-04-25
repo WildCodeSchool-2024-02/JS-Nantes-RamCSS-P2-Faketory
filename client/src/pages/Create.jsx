@@ -35,9 +35,6 @@ function Create() {
         const randomIndex2 = Math.floor(
           Math.random() * data.fakenews.length
         );
-        const randomIndex3 = Math.floor(
-          Math.random() * data.fakenews.length
-        );
         setRandomArticle2(data.fakenews[randomIndex2]);
       })
       .catch((error) => {
@@ -54,14 +51,17 @@ function Create() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Create a new news object
+
     const newNews = {
+      id: randomArticle2.id,
+      img: randomArticle2.img,
       title: newsTitle,
       body: newsText,
-      // Add any other fields you need for the news
+      author:randomArticle2.author,
+      section:randomArticle2.section,
+      date:randomArticle2.date,
     };
 
-    // Send a POST request to the server
     fetch('http://localhost:3001/api/usernews', {
       method: 'POST',
       headers: {
@@ -76,7 +76,7 @@ function Create() {
         return response.json();
       })
       .then((data) => {
-        console.log('News posted successfully', data);
+        console.warn('News posted successfully', data);
       })
       .catch((error) => {
         console.error('There was a problem with the fetch operation: ', error);
