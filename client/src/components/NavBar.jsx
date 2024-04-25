@@ -11,14 +11,14 @@ function NavBar() {
             Best Of
           </NavLink>
           <NavLink className="lien" to="/create">
-            Creer sa Fake News
+            Créer sa Fake News
           </NavLink>
           <NavLink className="lien" to="/fakeschool">
             Fake School
           </NavLink>
           <NavLink className="lien" to="/connexion">
+            <span className="icon-user" />
             Connexion
-            <span className="icon-user">...</span>
           </NavLink>
         </ul>
       </nav>

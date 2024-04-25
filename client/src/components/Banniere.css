@@ -1,0 +1,15 @@
+.bandef {
+  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: marquee 20s linear infinite;
+  /* Chrome, Safari, Opera */
+  animation: marquee 20s linear infinite;
+  /* Vitesse de défilement */
+}
+
+/*  Arrêt du défilement au survol */
+.bandef:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}

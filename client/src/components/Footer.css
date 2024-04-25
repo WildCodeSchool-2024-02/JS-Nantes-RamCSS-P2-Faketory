@@ -3,16 +3,30 @@ article {
   font-family: var(--font), sans-serif;
 }
 
+.container {
+  display: grid, inline-grid;
+}
+
 .contact {
-  display: flex;
+  display: inline-grid;
   flex-direction: column;
   gap: 2px;
 }
 
 .navigation {
-  display: flex;
+  display: inline-grid;
   flex-direction: column;
   gap: 2px;
+}
+
+img {
+  float: right;
+  margin-top: -20px;
+}
+
+.icon-return {
+  float: right;
+  border-radius: 50px;
 }
 
 p {
