@@ -64,10 +64,11 @@ function UserConnection() {
 
   return (
     <>
-      <h2 aria-label={username || "User Connection"}>
+      <h1 aria-label={username || "User Connection"}>
         {username || "User Connection"}
-      </h2>
-      <h3> WELCOME </h3>
+        <br />
+        WELCOME
+      </h1>
       <div id="cards" className="cards">
         {randomArticle2 && (
           <div id="card2" key={randomArticle2.id} className="card">
