@@ -22,12 +22,13 @@ function SelectNews() {
         <h2>that is the question</h2>
       </header>
       <section className="selectnews">
-        <article>
+      <article>
           <img src={content[0].img} alt="" />
-          <p>
-            {content[0].name}
-            <h2>{content[0].title}</h2>
-          </p>
+          <h2>
+            {content[2].name}
+            {content[2].title}
+          </h2>
+          <p>&nbsp;</p>
         </article>
         <article>
           <img src={content[0].img} alt="" />
