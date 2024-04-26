@@ -7,33 +7,26 @@
 }
 
 .container {
-  /* display: grid, inline-grid; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
+  align-items: center;
 }
 
 .contact {
   flex-direction: column;
   gap: 0;
   list-style: none;
-  /* display: inline-grid;
-  flex-direction: column;
-  gap: 2px; */
 }
 
 .navigation {
   flex-direction: column;
   gap: 0;
   list-style: none;
-  /* display: inline-grid;
-  flex-direction: column;
-  gap: 2px;*/
 }
 
 img {
   float: right;
-  /* margin-top: -17px; */
   margin-left: -5px;
 }
 

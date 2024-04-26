@@ -29,7 +29,6 @@ function Footer() {
           {/* <button className="icon-return" /> */}
           <img src="./images/logo-faketory.svg" alt="logo faketory" />
           <p>
-            {" "}
             Copyright © - 2024 - Tous droits réservés. Politique de
             confidentialité - Mentions légales.
           </p>
