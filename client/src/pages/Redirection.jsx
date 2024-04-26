@@ -6,7 +6,7 @@ function Redirection() {
 
   return (
     <div className="cardd">
-      <h1>Vous n'êtes pas connecté </h1>
+      <h1>Vous n'êtes pas connecté ! </h1>
       <h2>Veuillez vous connecter pour accéder à cette page.</h2>
       <button type="button" onClick={() => navigate("/connexion")}>
         Connexion
