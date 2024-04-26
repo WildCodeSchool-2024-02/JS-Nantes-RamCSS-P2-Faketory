@@ -7,6 +7,7 @@ import UserConnection from "./pages/UserConnection";
 import FakeSchool from "./pages/FakeSchool";
 import BestOf from "./pages/BestOf";
 import Create from "./pages/Create";
+import Redirection from "./pages/Redirection";
 import NewUser from "./pages/NewUser";
 // page components
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "create",
         element: <Create />,
+      },
+      {
+        path: "redirection",
+        element: <Redirection />,
       },
       {
         path: "fakeschool",
