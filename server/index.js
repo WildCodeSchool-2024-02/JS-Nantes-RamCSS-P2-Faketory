@@ -4,21 +4,30 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const path = require('path');
 
 const app = express();
 const port = 3001;
 
 const newsData = require("./Fakenewsnom.json");
-
+const newsData2 = require("./Fakenews.json");
+const newsData3 = require("./UserNews.json");
 const users = require("./users.json");
+
 
 app.use(bodyParser.json());
 
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: '*' }));
 
 app.get("/api/fakenewsnom", (req, res) => {
   res.json(newsData);
+});
+app.get("/api/fakenews", (req, res) => {
+  res.json(newsData2);
+});
+app.get("/api/usernews", (req, res) => {
+  res.json(newsData3);
 });
 
 app.post("/api/auth", (req, res) => {
@@ -69,6 +78,35 @@ app.post("/api/users", (req, res) => {
     });
   }
 });
+
+app.post('/api/usernews', (req, res) => {
+  const newNews = req.body;
+
+  // eslint-disable-next-line consistent-return
+  fs.readFile(path.join(__dirname, 'UserNews.json'), 'utf8', (readError, data) => {
+    if (readError) {
+      console.error('Error reading file:', readError);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+
+    const userNews = JSON.parse(data);
+    if (!Array.isArray(userNews.newNews)) {
+      userNews.newNews = [];
+    }
+    userNews.newNews.push(newNews);
+
+    // eslint-disable-next-line consistent-return
+    fs.writeFile(path.join(__dirname, 'UserNews.json'), JSON.stringify(userNews), (writeError) => {
+      if (writeError) {
+        console.error('Error writing file:', writeError);
+        return res.status(500).json({ error: 'Internal Server Error' });
+      }
+
+      res.json({ message: 'News posted successfully' });
+    });
+  });
+});
+
 app.listen(port, (err) => {
   if (err) {
     console.error("Error: ça marche pas", err);
