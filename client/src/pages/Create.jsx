@@ -1,11 +1,9 @@
-import { useState, useEffect, useContext} from "react";
-import { useNavigate } from 'react-router-dom';
-import { UserConnectionContext } from '../Contextes/ConnectionContext';
-
+import { useState, useEffect, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { UserConnectionContext } from "../Contextes/ConnectionContext";
 
 import "./UserConnection.css";
 import Spinner from "../assets/svg-spinners--bars-scale.svg";
-
 
 function Create() {
   const [newsTitle, setNewsTitle] = useState("");
@@ -22,7 +20,7 @@ function Create() {
   const { isConnected } = useContext(UserConnectionContext);
 
   if (!isConnected) {
-    navigate('/connexion');
+    navigate("/redirection");
   }
   useEffect(() => {
     fetch("http://localhost:3001/api/fakenews")
@@ -34,9 +32,7 @@ function Create() {
       })
       .then((data) => {
         setNewsArticles(data.fakenews);
-        const randomIndex2 = Math.floor(
-          Math.random() * data.fakenews.length
-        );
+        const randomIndex2 = Math.floor(Math.random() * data.fakenews.length);
         setRandomArticle2(data.fakenews[randomIndex2]);
       })
       .catch((error) => {
@@ -45,9 +41,7 @@ function Create() {
 
     const delayCard2 = Math.random() * 2000 + 1000;
 
-
     setTimeout(() => setLoadingCard2(false), delayCard2);
-
   }, []);
 
   const handleSubmit = (event) => {
@@ -57,15 +51,15 @@ function Create() {
       img: randomArticle2.img,
       title: newsTitle,
       body: newsText,
-      author:randomArticle2.author,
-      section:randomArticle2.section,
-      date:randomArticle2.date,
+      author: randomArticle2.author,
+      section: randomArticle2.section,
+      date: randomArticle2.date,
     };
 
-    fetch('http://localhost:3001/api/usernews', {
-      method: 'POST',
+    fetch("http://localhost:3001/api/usernews", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(newNews),
     })
@@ -76,13 +70,12 @@ function Create() {
         return response.json();
       })
       .then((data) => {
-        console.warn('News posted successfully', data);
+        console.warn("News posted successfully", data);
       })
       .catch((error) => {
-        console.error('There was a problem with the fetch operation: ', error);
+        console.error("There was a problem with the fetch operation: ", error);
       });
   };
-
 
   return (
     <>
@@ -118,9 +111,7 @@ function Create() {
               <>
                 <div id="imageTitre">
                   <img id="img2" src={randomArticle2.img} alt="Article" />
-                  <h4>
-                    {newsTitle || randomArticle2.title}
-                  </h4>
+                  <h4>{newsTitle || randomArticle2.title}</h4>
                 </div>
                 <p>
                   {showFullTextCard2

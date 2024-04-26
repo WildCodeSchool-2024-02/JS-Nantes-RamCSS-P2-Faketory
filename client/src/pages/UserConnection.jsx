@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./UserConnection.css";
 import Spinner from "../assets/svg-spinners--bars-scale.svg";
-import { UserConnectionContext } from '../Contextes/ConnectionContext';
+import { UserConnectionContext } from "../Contextes/ConnectionContext";
 
 function UserConnection() {
   const [username, setUsername] = useState("");
@@ -53,21 +53,21 @@ function UserConnection() {
   const handleSubmit = (event) => {
     event.preventDefault();
     handleLogin(username, password)
-        .then(() => {
-          navigate("/");
-        })
-        .catch((error) => {
-          console.error("There was a problem with the fetch operation: ", error);
-          setErrorMessage("Échec de l'authentification. Veuillez réessayer.");
-        });
+      .then(() => {
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation: ", error);
+        setErrorMessage("Échec de l'authentification. Veuillez réessayer.");
+      });
   };
 
   return (
     <>
       <h1 aria-label={username || "User Connection"}>
         {username || "User Connection"}
-<br />
-       WELCOME
+        <br />
+        WELCOME
       </h1>
       <div id="cards" className="cards">
         {randomArticle2 && (
