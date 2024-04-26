@@ -66,7 +66,7 @@ function UserConnection() {
     <>
       <h1 aria-label={username || "User Connection"}>
         {username || "User Connection"}
-<br></br>
+<br />
        WELCOME
       </h1>
       <div id="cards" className="cards">
