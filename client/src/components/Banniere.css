@@ -1,73 +1,54 @@
-.bandef {
-  display: none;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: marquee 20s linear infinite;
-  /* Chrome, Safari, Opera */
-  animation: marquee 20s linear infinite;
-  /* Vitesse de défilement */
-}
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
-/*  Arrêt du défilement au survol */
-.bandef:hover {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* Texte défilant */
-.messagedefilant {
-  display: block;
-  margin: 40px auto;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-  width: 50%;
-  max-width: 640px;
-  height: 60px;
-}
-
-.messagedefilant div {
+.zone-annonce {
   position: absolute;
-  min-width: 100%; /* au minimum la largeur du conteneur */
-}
-
-.messagedefilant div span,
-.messagedefilant div:after {
-  position: relative;
-  display: inline-block;
-  font-size: 2rem;
-  white-space: nowrap;
-  top: 0;
-}
-
-.messagedefilant div span {
-  animation: defilement 10s infinite linear;
-  background: #cde;
-}
-
-.messagedefilant div:after {
-  position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
-  content: attr(data-text);
-  animation: defilement2 10s infinite linear;
-  background: #edc;
+  width: 1000px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #448e08;
 }
 
-@keyframes defilement {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -100%;
-  }
+.annonce_content {
+  display: block;
+  padding: 10px 0px;
+  width: 100%;
 }
 
-@keyframes defilement2 {
-  0% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 0%;
+.content1 {
+  transform: translateX(100%);
+  /* Animation start*/
+
+  /* animation */
+  animation: move 20s linear infinite;
+}
+
+.content2 {
+  transform: translateX(250%);
+  /* Animation start*/
+  /* animation */
+  animation: move 20s linear infinite;
+}
+
+.content3 {
+  transform: translateX(320%);
+  /* Animation start*/
+  /* animation */
+  animation: move 25s linear infinite;
+}
+
+.content4 {
+  transform: translateX(380%);
+  /* Animation start*/
+  /* animation */
+  animation: move 30s linear infinite;
+}
+
+/* Launch animation */
+@keyframes move {
+  to {
+    transform: translateX(-100%);
   }
 }

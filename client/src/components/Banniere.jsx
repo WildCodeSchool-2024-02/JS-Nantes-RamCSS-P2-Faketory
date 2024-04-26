@@ -1,30 +1,25 @@
 import "./Banniere.css";
 
 function Banniere() {
+ 
   return (
-    <>
-      <div className="messagedefilant">
-        <div data-text="Voici un texte qui doit défiler horizontalement. Il peut etre encore plus long !---">
-          <span>
-            Voici un texte qui doit défiler horizontalement. Il peut etre encore
-            plus long !---
-          </span>
-        </div>
+  
+      <div className="zone-annonce">
+        <span className="annonce_content content1">
+          AVEC UN PEU DE POUDRE DE PERLIMPINPIN,
+        </span>
+        <span className="annonce_content content2">
+          A GRANDE VITESSE CIRCULERONT NOS TRAINS
+        </span>
+        <span className="annonce_content content3">
+          ET TIRANT DE DESSOUS LE CHAPEAU UN LAPIN,
+        </span>
+        <span className="annonce_content content4">
+          LA BONNE ANNEE ILS NOUS DIRONT EN 2020.
+        </span>
       </div>
 
-      <div className="messagedefilant">
-        <div data-text="texte très court !---">
-          <span>texte très court !---</span>
-        </div>
-      </div>
-
-      <article>
-        <h1>Horoscope</h1>
-        <div className="bandef">
-          <span> Ceci est un message défilant !</span>
-        </div>
-      </article>
-    </>
+ 
   );
 }
 
