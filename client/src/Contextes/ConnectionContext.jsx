@@ -24,11 +24,16 @@ export function UserConnectionProvider({ children }) {
         return response.json();
       })
       .then((data) => {
-        localStorage.setItem("token", data.token);
-        setIsConnected(true);
+        if (data.token) {
+          localStorage.setItem("token", data.token);
+          setIsConnected(true);
+        } else {
+          throw new Error("Authentication failed");
+        }
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation: ", error);
+        throw error;
       });
 
   return (
