@@ -1,7 +1,6 @@
 {
   "news": [
     {
-      "status": "Fait",
       "id": 0,
       "img": "https://media.ouest-france.fr/v1/pictures/MjAyMzA1YjQyNjc2MjcyMWJlZTAyYmQ5YzViNTQ4NzUwZGNhNTA?width=1260&height=708&focuspoint=45%2C64&cropresize=1&client_id=bpeditorial&sign=1a7c75bfa18a9489bd4a9ba963f211230016c1298ad58ea356573276d3b7613c",
       "title": "Écrire notre histoire dans celle de la flamme olympique",
@@ -11,7 +10,6 @@
       "date": "2023-06-23T14:30:30"
     },
     {
-      "status": "Fait",
       "id": 1,
       "img": "https://s.france24.com/media/display/504bf5d6-fcc3-11ee-90b5-005056a90284/w:980/p:16x9/000_34LH2CJ.webp",
       "title": "Pourquoi la baisse de la pollution de l'air aggrave le réchauffement de la planète",
@@ -21,7 +19,6 @@
       "date": "2024-04-17T18:19:30"
     },
     {
-      "status": "Fait",
       "id": 2,
       "img": "https://wp-pa.phonandroid.com/uploads/2023/11/Final-11.jpg",
       "name": "Une trousse à outils",
@@ -32,7 +29,6 @@
       "date": "2023-11-16T12:54:00"
     },
     {
-      "status": "Fait ",
       "id": 3,
       "img": "https://bulletindescommunes.net/wp-content/uploads/2018/01/la-seine-nettoy%C3%A9e.jo_-600x326.jpg",
       "title": "Grand nettoyage : Vers une Seine propre pour les Jeux Olympiques de 2024",
@@ -42,7 +38,6 @@
       "date": "2023-10-23T15:31:00"
     },
     {
-      "status": "Fait",
       "id": 4,
       "img": "https://media.lesechos.com/api/v1/images/view/660f8c68c4746d27ce79caa8/1280x720/0110190804894-web-tete.jpg",
       "title": "Gabriel Attal penche plutôt pour un durcissement des conditions d'affiliation de l'assurance-chômage",
@@ -52,7 +47,6 @@
       "date": "2024-04-19T14:38:30"
     },
     {
-      "status": "Fait",
       "id": 5,
       "img": "https://pbs.twimg.com/media/GDINiczaUAADJRN?format=jpg&name=900x900",
       "title": "Porte arrachée en vol sur un Boeing : un rapport accablant et une demande d’indemnités colossale",
@@ -62,7 +56,6 @@
       "date": "2024-03-06T14:35:30"
     },
     {
-      "status": "Fait",
       "id": 6,
       "img": "https://mesinfos.fr/content/articles/675/A191675/initial-gerard-larcher.jpg",
       "name": "Gérard Larcher",
@@ -73,7 +66,6 @@
       "date": "2024-01-23T20:26:30"
     },
     {
-      "status": "Fait",
       "id": 7,
       "img": "https://mesinfos.fr/content/articles/457/A196457/initial-00.jpg",
       "title": "La découverte des ossements du petit Emile relance l’enquête au Haut-Vernet",
@@ -83,7 +75,6 @@
       "date": "2024-04-02T09:09:30"
     },
     {
-      "status": "Fait",
       "id": 8,
       "img": "https://mobile-img.lpcdn.ca/v2/924x/209f45f4d1b639b8afe178ff20e9db13.webp",
       "title": "Poutine a renforcé le soutien aux droits LGBT+ en Ukraine",
@@ -93,7 +84,6 @@
       "date": "2023-04-25T22:15:00"
     },
     {
-      "status": "Fait",
       "id": 9,
       "img": "https://fyooyzbm.filerobot.com/v7/Image+RCAXXQ601_SB_PENURIE+DE+MEDICAMENTS-Z57VTJsG.jpg",
       "title": "Une nouvelle stratégie pour lutter contre les pénuries de médicaments",
@@ -101,6 +91,109 @@
       "author": "Site du gouvernement",
       "section": "Science",
       "date": "2023-12-19T06:30:30"
+    }
+  ],
+  "fakenews": [
+    {
+      "name": "",
+      "id": 0,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/iStock-172964901-2.jpg",
+      "title": "Désormais électronique, la flamme olympique aura une saveur Fruit Du Dragon Pastèque Citron Vert Emeraude",
+      "body": "“Nous voulons que la flamme olympique reflète notre société, surtout quand vous croisez un vapoteur qui crache aux quatre vents des saveurs multicolores et doucement parfumées” a expliqué un porte-parole du CIO en rechargeant la flamme avec la saveur Fruit Du Dragon Pastèque Citron Vert Emeraude. “Bien sûr, chaque ville ou région pourra adapter la flamme aux goûts et parfums de fruits locaux” explique le responsable du CIO.  “Pour bien refléter les territoires, il y aura des personnalisations comme le parfum cannelé-vin rouge-chocolatine-vase de la Garonne en passant par le parfum chouchen-algues vertes-bière, en Bretagne.” ",
+      "author": "La Rédaction",
+      "section": "Sport",
+      "date": "2024-04-16T14:30:30"
+    },
+    {
+      "name": "",
+      "id": 1,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/03/iStock-1295533217-2048x1152.jpg",
+      "title": "SCIENCESClimat – Selon une étude, l’enfer pourrait augmenter de 2 degrés d’ici 2050",
+      "body": "C’est un véritable vent de panique qui a gagné les 9 cercles de l’enfer. En cause, une possible augmentation de 2 degrés qui pourrait rapidement rendre le quotidien des suppliciés invivable. « C’est vrai que c’est inquiétant » nous confie soucieux Franz Steiner, un damné, occupé à se faire introduire des canoës dans l’urètre. « On n’a qu’une seule éternité et c’est à nous d’en prendre soin ! » ajoute-t-il, pendant qu’un autre démon cornu lui arrache les dents à la truelle en lui faisant écouter en boucle la discographie d’Indochine.",
+      "author": "La Rédaction",
+      "section": "Science",
+      "date": "2024-03-19T14:00:30"
+    },
+    {
+      "status": "A faire",
+      "id": 2,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2023/11/iStock-1372307856.jpg",
+      "name": "Un astronaute",
+      "title": " de la NASA perd son stagiaire pendant une sortie dans l’espace",
+      "body": "Un nouveau corps céleste a fait son apparition au-dessus de nos têtes ces dernières heures. Visible depuis la Terre, Jordan, un stagiaire qui accompagnait deux astronautes a été définitivement perdu au cours d’une mission. C’est au cours d’une sortie extra-véhiculaire visant à procéder à des réparations sur le pare-brise de la station qu’un des deux astronautes aurait « laissé échapper par inadvertance » son stagiaire, le laissant dériver en orbite autour de la Terre.",
+      "author": "20 Minutes avec agence",
+      "section": "Science",
+      "date": "2023-11-16T12:54:00"
+    },
+    {
+      "name": "",
+      "id": 3,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/03/iStock-1329507356-2048x1365.jpg",
+      "title": "JO Paris 2024 : de l’eau du Gange sera versée dans la Seine pour l’assainir",
+      "body": "A quelques mois des jeux, Anne Hidalgo a annoncé que de l’eau du Gange serait versée dans la Seine pour l’assainir. “L’état de la Seine est trop fluctuant pour pouvoir garantir qu’elle sera praticable cet été”, a annoncé la maire de Paris en conférence de presse. “L’Inde a donc généreusement proposé son aide et nous livrera une tonne d’eau du Gange que nous verserons dans la Seine pour l’assainir”. \n\n Des hydravions feront le trajet de la ville de Varanasi en Inde, à Paris, pour verser l’eau du Gange directement dans la Seine. La France a proposé en échange, de verser une tonne d’eau de la Seine, mais le pays a refusé. “C’est avec plaisir que nous venons en aide à nos amis Français. Nous n’attendons rien en retour et surtout pas leur eau polluée”, s’est exclamé le Consul d’Inde. ",
+      "author": "La Rédaction",
+      "section": "Sport",
+      "date": "2024-03-26T10:30:00"
+    },
+    {
+      "name": "Gabriel Attal",
+      "id": 4,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/01/Capture-decran-2024-01-11-a-07.42.29-2048x985.png",
+      "title": " lance “France Feignasse” pour les chômeurs de plus d’un an",
+      "body": "Gabriel Attal a encore prouvé ce matin qu’il avait une imagination débordante en matière de politique d’emploi « comme je ne peux malheureusement pas raccourcir la durée d’indemnisation, il a fallu trouver une autre solution pour motiver les glandeurs  » nous glisse le jeune homme. \\n\\n C’est lors d’une nuit pascalienne que la solution lui est apparue  » Je regardais Touche pas à mon Poste en replay et je me suis dit que la solution était là : l’humiliation. » \n\n La suite on la connaît ; le Premier ministre s’empare de son stylo-plume et rapidement il griffonne plusieurs idées ; les chômeurs longue durée pourraient par exemple être obligés de marcher sur les genoux jusqu’à France Travail pour recevoir leurs indemnités, ou porter un logo France Travail cousu sur leur vêtement. Mais finalement, il retient une option plus subtile, la création de  » France Feignasse  » pour les chômeurs inscrits depuis plus d’1 an. \n\n Et en plus, ça ne coûte rien ni à eux ni au gouvernement. Certes ils continueront à toucher leurs revenus, c’est chiant, mais au moins ils se sentiront sales «  témoigne le jeune Premier ministre avec son taux monocorde.",
+      "author": "La Rédaction",
+      "section": "Politique",
+      "date": "2024-04-04T14:00:30"
+    },
+    {
+      "name": "Boeing",
+      "id": 5,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/iStock-1893370293.jpg",
+      "title": " cesse son partenariat avec LEGO pour la construction de ses 737",
+      "body": "C’est la fin d’un des couples les plus emblématiques qui aura fait souffler un vent de renouveau sur l’industrie aéronautique. Boeing et Lego viennent d’annoncer comme d’un accord la fin d’une collaboration de plus de dix ans. La faute à de nombreuses avaries qui ont touché ces derniers mois plusieurs appareils fabriqués à partir des petites briques et issus des usines Boeing. \n\n Il faut dire qu’il y avait de l’eau dans de gaz, chaque partie se renvoyant la balle et la responsabilité des derniers accidents impliquant des 737. Déjà en janvier, les deux groupes se rejetaient mutuellement la faute après l’arrachage d’une porte en plein vol. Quand Dave Calhoun, PDG de Boeing, reprochait à LEGO un défaut de fabrication de ses briques, son homologue Danois Niels Christiansen le renvoyait aux défaillances de ses propres équipes lors de la lecture et de l’application des notices de montage. \n\n Du côté des usagers, de plus en plus préoccupés par la fiabilité des appareils, on oscille entre soulagement et déception. « J’ai offert un 737 à monter soi-même à mon fils de huit ans pour Noël. Aujourd’hui, il en a seize et n’a toujours pas réussi à terminer le montage » déclare un fan de la firme LEGO qui ne cache pas son inquiétude et sa tristesse de « ne jamais voir un jour son fils aux commandes de son propre avion ».",
+      "author": "La Rédaction",
+      "section": "Polémique",
+      "date": "2024-04-09T14:00:30"
+    },
+    {
+      "id": 6,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/02/Capture-decran-2024-02-20-a-09.30.14-2048x1073.png",
+      "name": "Gérard Larcher",
+      "title": " veut inscrire le pâté de foie et les rillettes de veau dans la Constitution",
+      "body": "Après s’être prononcé contre l’inscription de l’IVG dans la Constitution, le président du Sénat a indiqué militer en revanche pour y inscrire « ce qui fait l’honneur de la France ». \n\n « Je suis favorable à l’inscription du pâté de foie et des rillettes de veau dans la Constitution » a déclaré Gérard Larcher ce matin au micro de BFM TV avant d’ajouter : « A l’heure où les Français sont divisés et sont parfois à la recherche d’identité, je pense qu’il est primordial de se rassembler autour des valeurs qui font l’honneur de la France. » Le président du Sénat a toutefois précisé qu’il n’était pas inflexible et ouvert au débat, « notamment sur les œufs mayo et le bœuf bourguignon ». En revanche, il s’est montré intraitable vis-à-vis des « véganes consommateurs de pousses de soja et de quinoa » qui sont pour lui « des traîtres à la nation » et pour qui il propose « la déchéance de nationalité ». \n\n « Je suis favorable à l’inscription du pâté de foie et des rillettes de veau dans la Constitution » a déclaré Gérard Larcher ce matin au micro de BFM TV avant d’ajouter : « A l’heure où les Français sont divisés et sont parfois à la recherche d’identité, je pense qu’il est primordial de se rassembler autour des valeurs qui font l’honneur de la France. » Le président du Sénat a toutefois précisé qu’il n’était pas inflexible et ouvert au débat, « notamment sur les œufs mayo et le bœuf bourguignon ». En revanche, il s’est montré intraitable vis-à-vis des « véganes consommateurs de pousses de soja et de quinoa » qui sont pour lui « des traîtres à la nation » et pour qui il propose « la déchéance de nationalité ».",
+      "author": "La Rédaction",
+      "section": "Politique",
+      "date": "2024-02-20T10:00:30"
+    },
+    {
+      "name": "Émile",
+      "id": 7,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/04/iStock-1445922202-2048x1365.jpg",
+      "title": " – L’enquête relancée après la découverte de restes de déontologie journalistique",
+      "body": "Selon les premiers éléments, ces restes de déontologie auraient été retrouvés dans un terrain qui aurait déjà été fouillé et arpenté par les médias et ce depuis plusieurs mois. Mais la localisation de ces restes de déontologie interroge, de même que son propriétaire. « Il se pourrait que de la déontologie ait pu glisser d’un sac d’un des journalistes ou simplement, il ou elle l’aura posé sur le bord du chemin pendant son reportage et aura oublié de la ramasser avant de partir » a souligné un capitaine de gendarmerie. Les restes vont être examinés afin d’identifier leur propriétaire. Dans l’immédiat, plusieurs médias ont démenti fermement être à l’origine de ce dépôt sauvage de déontologie journalistique. « Dans ce genre d’affaires, pour réagir le plus vite possible, nous demandons à nos équipes de ne pas s’encombrer d’objets inutiles en reportage pour être opérationnel le plus vite possible » a commenté un média. « S’ils s’avèrent qu’ils avaient emporté avec eux de la déontologie journalistique, ils auront contrevenu à nos consignes et il y aura des sanctions » a répondu de son côté le responsable communications de BFMTV tout en annonçant 25 nouveaux reportages de son émission »Ligne Rouge » pour les trois prochaines semaines, tous exclusivement consacrés à l’énigme de la mort du jeune enfant.",
+      "author": "La Rédaction",
+      "section": "Société",
+      "date": "2024-04-02T18:30:30"
+    },
+    {
+      "name": "",
+      "id": 8,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2024/03/iStock-157591769-2048x1335.jpg",
+      "title": "Pour montrer son ouverture d’esprit, la Russie envoie 30 000 homosexuels sur le front ukrainien",
+      "body": "Dans un geste inclusif et progressiste, Vladimir Poutine a envoyé ce mardi plusieurs milliers d’homosexuels rejoindre les combattants russes sur le front ukrainien. Reportage. \n\n « On est au 21eme siècle ! Il est inconcevable qu’on autorise les hétérosexuels à mourir violemment sous les bombes pour une cause qui les dépasse et pas les homosexuels ! » a déclaré ce matin hors de lui Vladimir Poutine lors d’une conférence de presse, en tapant du poing sur la table. “Voilà pourquoi j’ai décidé de faire un geste et d’annoncer le déploiement exceptionnel de plus de 30 000 personnes LGBT en Ukraine.” poursuit-il. “Cela permettra de faire de la place parmi les troupes ennemies tout en faisant de la place dans nos prisons.” \n\n Une initiative unique dans l’histoire de la Russie que le gouvernement de Vladimir Poutine a souhaité encadrer avec soin. Ainsi, chaque recrue recevra un équipement spécialement conçu pour l’occasion : gilets pare-balles en rotin, casques en dentelle et un pistolet à eau longue portée. Les treillis se verront également affublés de deux grosses enceintes de 4500 watts dans le dos, diffusant en continu et à plein volume des chansons de Lady Gaga et le dernier album de Taylor Swift. Enfin, des néons d’une rare intensité présents sur les casques, armes, et plastrons, projetteront en permanence une vive lumière arc-en-ciel sur l’ensemble des combattants. \n\n “Être gay est une fierté et ce n’est pas parce qu’on est sur un champ de bataille que l’on doit encore se cacher. Bien au contraire !” a déclaré Sergueï Choïgou, ministre des armées russes. Puis d’ajouter : “En clair, notre mission est simple : rendre enfin les minorités plus visibles… En particulier sur le front.” \n\n Une initiative inclusive qui semble en inspirer plus d’un puisque la Chine vient de renouveler son ambition de dépasser la Russie dans la conquête de l’espace en s’engageant à envoyer 10 000 Ouïghours en orbite d’ici 2030.",
+      "author": "La Rédaction",
+      "section": "Monde",
+      "date": "2024-03-27T10:00:00"
+    },
+    {
+      "name": "",
+      "id": 9,
+      "img": "https://www.legorafi.fr/wp-content/uploads/2023/12/thermometer-1539191_1920.jpg",
+      "title": "Pénurie de médicaments – Le gouvernement recommande de mettre une gousse d’ail sous son oreiller",
+      "body": "Face à la très probable pénurie de médicaments des prochaines semaines, le gouvernement a conseillé aux Français de mettre une gousse d’ail sous leur oreiller. \n\n C’est dans un communiqué officiel du ministère de la Santé que le ministre Aurélien Rousseau a conseillé aux Français de privilégier les « remèdes de grand-mère » pour surmonter la pénurie de médicaments. Mais un autre communiqué a été envoyé aux pharmacies, comme nous le raconte François, pharmacien du Ve arrondissement de Paris : « J’ai halluciné ! C’est marqué noir sur blanc qu’on doit conseiller aux clients, à qui on ne peut pas fournir de l’Amoxicilline et du Paracétamol, de mettre une gousse d’ail sous leur oreiller ! ». \n\n Des consignes du ministère qui mettent Samantha, DRH de 42 ans, en colère : « J’ai eu un début d’appendicite et on m’a dit de boire de l’eau chaude avec du citron, de la cannelle, du curcuma et de manger une cuillère de miel. J’ai fait confiance… et j’ai terminé à l’hôpital ! J’ai failli y passer ! » soupire la jeune femme en croquant dans une badiane : « On m’a donné ça contre les maux de ventre ». \n\n Du côté du ministère, on se refuse à tout commentaire. Cependant, une source anonyme, proche du ministre Rousseau, nous confie qu’un budget va être débloqué pour pallier les ruptures de stock en envoyant des guérisseurs et marabouts dans les pharmacies.",
+      "author": "La Rédaction",
+      "section": "Science",
+      "date": "2023-12-19T10:00:30"
     }
   ]
 }

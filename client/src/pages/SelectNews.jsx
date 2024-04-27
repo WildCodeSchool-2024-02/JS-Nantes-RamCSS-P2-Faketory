@@ -10,47 +10,49 @@ function SelectNews() {
       .then((data) => setContent(data.news));
   }, []);
   useEffect(() => {
-    fetch("http://localhost:3001/api/fakenews")
+    fetch("http://localhost:3000/src/news.json")
       .then((response) => response.json())
       .then((data) => setContent1(data.fakenews));
   }, []);
+
   if (content.length === 0 || content1.length === 0) {
     return "Chargement...";
   }
-  const choice = Math.floor(Math.random() * 2);
+  const max = content1.length;
+  const min = 0;
+  let ide = Math.floor(Math.random() * (max - min)) + min
+  ide+=0;
+  const choice = Math.floor(Math.random() * (max - min)) + min;
   const checknews = [];
   if (choice === 0) {
-    checknews.push(content);
+    checknews.push(content[ide], content1[ide]);
   } else {
-    checknews.push(content1);
-  }
-  if (choice === 1) {
-    checknews.push(content);
-  } else {
-    checknews.push(content1);
+    checknews.push(content1[ide], content[ide]);
   }
   const contentLeft = checknews[0];
   const contentRight = checknews[1];
   return (
+
     <>
+
       <header className="select-news">
         <h1>News or Fake</h1>
         <h2>that is the question</h2>
       </header>
       <section className="selectnews">
         <article>
-          <img src={contentLeft[0].img} alt="" />
+          <img src={contentLeft[ide].img} alt="" />
           <h2>
-            {contentLeft[0].name}
-            {contentLeft[0].title}
+            {contentLeft[ide].name}
+            {contentLeft[ide].title}
           </h2>
           <p>&nbsp;</p>
         </article>
         <article>
-          <img src={contentRight[0].img} alt="" />
+          <img src={contentRight[ide].img} alt="" />
           <h2>
-            {contentRight[0].name}
-            {contentRight[0].title}
+            {contentRight[ide].name}
+            {contentRight[ide].title}
           </h2>
           <p>&nbsp;</p>
         </article>
