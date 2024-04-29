@@ -40,7 +40,6 @@ export function UserConnectionProvider({ children }) {
       });
 
   return (
-
     <UserConnectionContext.Provider
       /* eslint-disable-next-line react/jsx-no-constructed-context-values */
       value={{ isConnected, handleLogin, username }}

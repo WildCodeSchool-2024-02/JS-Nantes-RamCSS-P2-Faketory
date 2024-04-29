@@ -2,16 +2,13 @@ import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserConnectionContext } from "../Contextes/ConnectionContext";
 
-import BanniereTest from "../components/BanniereTest";
-import "./UserConnection.css";
+import "./Create.css";
 import Spinner from "../assets/svg-spinners--bars-scale.svg";
 
 function Create() {
   const [newsTitle, setNewsTitle] = useState("");
   const [newsText, setNewsText] = useState("");
   const [newsArticles, setNewsArticles] = useState([]);
-  const [showFullTextCard2] = useState(false);
-
   const [loadingCard2, setLoadingCard2] = useState(true);
 
   const [randomArticle2, setRandomArticle2] = useState(null);
@@ -28,7 +25,7 @@ function Create() {
     navigate("/redirection");
   }
   useEffect(() => {
-    fetch("http://localhost:3001/api/fakenews")
+    fetch("http://localhost:3001/api/trueNews2")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -36,8 +33,8 @@ function Create() {
         return response.json();
       })
       .then((data) => {
-        setNewsArticles(data.fakenews);
-        setRandomArticle2(selectRandomArticle(data.fakenews));
+        setNewsArticles(data.truenews2);
+        setRandomArticle2(selectRandomArticle(data.truenews2));
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation: ", error);
@@ -111,23 +108,16 @@ function Create() {
   return (
     <>
       <h1> Créez votre Fake News</h1>
-      <BanniereTest />
       <div id="cards" className="cards">
         <div id="card1" className="card">
           <form onSubmit={handleSubmit}>
             <label>
-              <h5>Ecrivez un titre :</h5>
-              <input
+              <h5>Ispirez-vous de l'image et</h5>
+              <h5>écrivez un titre :</h5>
+              <textarea
                 type="text"
                 value={newsTitle}
                 onChange={(e) => setNewsTitle(e.target.value)}
-              />
-            </label>
-            <label>
-              <h5>Une phrase d'accroche :</h5>
-              <textarea
-                value={newsText}
-                onChange={(e) => setNewsText(e.target.value)}
               />
             </label>
             <button type="submit" className="submit">
@@ -141,19 +131,13 @@ function Create() {
               <img id="spinner" src={Spinner} alt="Loading..." />
             ) : (
               <>
-                <p>{randomArticle2.section}</p>
+                <h5>{randomArticle2.section}</h5>
                 <div id="imageTitre">
                   <img id="img2" src={randomArticle2.img} alt="Article" />
                   <h4>{newsTitle || randomArticle2.title}</h4>
                 </div>
-                <p>
-                  {showFullTextCard2
-                    ? (newsText || randomArticle2.body).replace(/\n/g, "<br />")
-                    : `${(newsText || randomArticle2.body).substring(0, 100)}`}
-                </p>
-
                 <div id="auteur">
-                  <p>{username}</p>
+                  <h5>{username}</h5>
                 </div>
               </>
             )}
