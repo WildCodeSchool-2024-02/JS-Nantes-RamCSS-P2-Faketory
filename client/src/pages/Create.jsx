@@ -2,22 +2,27 @@ import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserConnectionContext } from "../Contextes/ConnectionContext";
 
+import BanniereTest from "../components/BanniereTest";
 import "./UserConnection.css";
 import Spinner from "../assets/svg-spinners--bars-scale.svg";
 
 function Create() {
   const [newsTitle, setNewsTitle] = useState("");
   const [newsText, setNewsText] = useState("");
-  // eslint-disable-next-line no-unused-vars
   const [newsArticles, setNewsArticles] = useState([]);
-  const [showFullTextCard2, setShowFullTextCard2] = useState(false);
+  const [showFullTextCard2] = useState(false);
 
   const [loadingCard2, setLoadingCard2] = useState(true);
 
   const [randomArticle2, setRandomArticle2] = useState(null);
 
+  const selectRandomArticle = (articles) => {
+    const randomIndex = Math.floor(Math.random() * articles.length);
+    return articles[randomIndex];
+  };
+
   const navigate = useNavigate();
-  const { isConnected } = useContext(UserConnectionContext);
+  const { isConnected, username } = useContext(UserConnectionContext);
 
   if (!isConnected) {
     navigate("/redirection");
@@ -32,8 +37,7 @@ function Create() {
       })
       .then((data) => {
         setNewsArticles(data.fakenews);
-        const randomIndex2 = Math.floor(Math.random() * data.fakenews.length);
-        setRandomArticle2(data.fakenews[randomIndex2]);
+        setRandomArticle2(selectRandomArticle(data.fakenews));
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation: ", error);
@@ -46,23 +50,8 @@ function Create() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const newNews = {
-      id: randomArticle2.id,
-      img: randomArticle2.img,
-      title: newsTitle,
-      body: newsText,
-      author: randomArticle2.author,
-      section: randomArticle2.section,
-      date: randomArticle2.date,
-    };
 
-    fetch("http://localhost:3001/api/usernews", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newNews),
-    })
+    fetch("http://localhost:3001/api/usernews")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -70,7 +59,49 @@ function Create() {
         return response.json();
       })
       .then((data) => {
-        console.warn("News posted successfully", data);
+        const newsData = data.newNews || [];
+        const highestId =
+          newsData.length > 0
+            ? Math.max(...newsData.map((news) => news.id))
+            : -1;
+        const newId = highestId + 1;
+
+        const newNews = {
+          id: newId,
+          img: randomArticle2.img,
+          title: newsTitle,
+          body: newsText,
+          author: username,
+          section: randomArticle2.section,
+          date: randomArticle2.date,
+        };
+
+        fetch("http://localhost:3001/api/usernews", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newNews),
+        })
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+          })
+          // eslint-disable-next-line no-shadow
+          .then((data) => {
+            console.warn("News posted successfully", data);
+            setNewsTitle("");
+            setNewsText("");
+            setRandomArticle2(selectRandomArticle(newsArticles));
+          })
+          .catch((error) => {
+            console.error(
+              "There was a problem with the fetch operation: ",
+              error
+            );
+          });
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation: ", error);
@@ -80,6 +111,7 @@ function Create() {
   return (
     <>
       <h1> Créez votre Fake News</h1>
+      <BanniereTest />
       <div id="cards" className="cards">
         <div id="card1" className="card">
           <form onSubmit={handleSubmit}>
@@ -109,22 +141,20 @@ function Create() {
               <img id="spinner" src={Spinner} alt="Loading..." />
             ) : (
               <>
+                <p>{randomArticle2.section}</p>
                 <div id="imageTitre">
                   <img id="img2" src={randomArticle2.img} alt="Article" />
                   <h4>{newsTitle || randomArticle2.title}</h4>
                 </div>
                 <p>
                   {showFullTextCard2
-                    ? newsText || randomArticle2.body
-                    : `${(newsText || randomArticle2.body).substring(0, 100)}...`}
+                    ? (newsText || randomArticle2.body).replace(/\n/g, "<br />")
+                    : `${(newsText || randomArticle2.body).substring(0, 100)}`}
                 </p>
-                <button
-                  className="plus"
-                  type="button"
-                  onClick={() => setShowFullTextCard2(!showFullTextCard2)}
-                >
-                  {showFullTextCard2 ? "Lire moins" : "Lire plus"}
-                </button>
+
+                <div id="auteur">
+                  <p>{username}</p>
+                </div>
               </>
             )}
           </div>
