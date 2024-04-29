@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 .zone-annonce {
-  position: absolute;
+  background-color: aqua;
+  display: block;
+  margin: 40px auto;
+  padding: 0;
+  overflow: hidden;
   top: 50px;
   left: 0;
   width: 1000px;
