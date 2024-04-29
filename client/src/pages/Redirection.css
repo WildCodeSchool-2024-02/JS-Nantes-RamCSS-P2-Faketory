@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  margin-left: 40%;
+  width: 100%;
   background-color: var(--black);
   border: 1px solid var(--black);
   border-radius: 5px;
@@ -14,13 +13,22 @@
     color 0.2s ease;
 }
 
+h2 {
+  text-align: center;
+  color: var(--blue);
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
 button {
   background-color: var(--black);
   color: var(--white);
   border: 1px solid var(--white);
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin-top: 20px;
   cursor: pointer;
   transition:
     background-color 0.2s ease,

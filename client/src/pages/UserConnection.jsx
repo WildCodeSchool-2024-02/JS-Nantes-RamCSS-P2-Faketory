@@ -33,9 +33,10 @@ function UserConnection() {
         const randomIndex2 = Math.floor(
           Math.random() * data.fakenewsnom.length
         );
-        const randomIndex3 = Math.floor(
-          Math.random() * data.fakenewsnom.length
-        );
+        let randomIndex3;
+        do {
+          randomIndex3 = Math.floor(Math.random() * data.fakenewsnom.length);
+        } while (randomIndex2 === randomIndex3);
         setRandomArticle2(data.fakenewsnom[randomIndex2]);
         setRandomArticle3(data.fakenewsnom[randomIndex3]);
       })

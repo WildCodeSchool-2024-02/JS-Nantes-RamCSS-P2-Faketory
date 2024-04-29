@@ -39,27 +39,33 @@ function NewUser() {
       });
   };
   return (
-    <div id="card1" className="card">
-      <form onSubmit={handleSubmit}>
-        <label>
-          Nom d'utilisateur :
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </label>
-        <label>
-          Mot de passe :
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </label>
-        <button type="submit">Créer un compte</button>
-        {errorMessage && <p className="error">{errorMessage}</p>}
-      </form>
+    <div className="NewUser">
+      <h1>Créer un compte</h1>
+      <p>
+        Vous avez déjà un compte ? <a href="/connexion">Connectez-vous</a>
+      </p>
+      <div id="card1" className="card">
+        <form onSubmit={handleSubmit}>
+          <label>
+            Nom d'utilisateur :
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </label>
+          <label>
+            Mot de passe :
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </label>
+          <button type="submit">Créer un compte</button>
+          {errorMessage && <p className="error">{errorMessage}</p>}
+        </form>
+      </div>
     </div>
   );
 }
