@@ -1,10 +1,13 @@
-import "./NavBar.css";
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 function NavBar() {
   return (
     <header className="header">
-      <img src="./images/logo-faketory.svg" alt="logo faketory" />
+      <NavLink to="/">
+        {" "}
+        <img src="./images/logo-faketory.svg" alt="logo faketory" />
+      </NavLink>
       <nav className="nav container">
         <ul className="header-ul">
           <NavLink className="lien" to="/best-of">
