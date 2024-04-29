@@ -1,61 +1,90 @@
 import { useState, useEffect } from "react";
+import SelectNewsCard from "../components/SelectNewsCard";
 import "./select-news.css";
 
 function SelectNews() {
-  const [content, setContent] = useState([]);
-  const [content1, setContent1] = useState([]);
+  const [news, setNews] = useState([]);
+  const [fakeNews, setFakeNews] = useState([]);
+  const [checkNewsPair, setCheckNewsPair] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:3000/src/news.json")
       .then((response) => response.json())
-      .then((data) => setContent(data.news));
-  }, []);
-  useEffect(() => {
-    fetch("http://localhost:3000/src/news.json")
-      .then((response) => response.json())
-      .then((data) => setContent1(data.fakenews));
+      .then((data) => {
+        const max = data.fakenews.length;
+        // const min = 0;
+        const ide = Math.floor(Math.random() * max);
+        const choice = Math.floor(Math.random() * 2);
+
+        if (choice === 0) {
+          setCheckNewsPair([data.news[ide], data.fakenews[ide]]);
+        } else {
+          setCheckNewsPair([data.fakenews[ide], data.news[ide]]);
+        }
+
+        setNews(() => {
+          const filteredNews = data.news.filter((el, index) => {
+            if (index === ide) {
+              return false;
+            }
+            return true;
+          });
+          return filteredNews;
+        });
+        setFakeNews(() => {
+          const filteredFakeNews = data.fakenews.filter((el, index) => {
+            if (index === ide) {
+              return false;
+            }
+            return true;
+          });
+          return filteredFakeNews;
+        });
+      });
   }, []);
 
-  if (content.length === 0 || content1.length === 0) {
-    return "Chargement...";
-  }
-  const max = content1.length;
-  const min = 0;
-  let ide = Math.floor(Math.random() * (max - min)) + min
-  ide+=0;
-  const choice = Math.floor(Math.random() * (max - min)) + min;
-  const checknews = [];
-  if (choice === 0) {
-    checknews.push(content[ide], content1[ide]);
-  } else {
-    checknews.push(content1[ide], content[ide]);
-  }
-  const contentLeft = checknews[0];
-  const contentRight = checknews[1];
+  const change = () => {
+    const ide = Math.floor(Math.random() * fakeNews.length);
+
+    const choice = Math.floor(Math.random() * 2);
+    if (choice === 0) {
+      setCheckNewsPair([news[ide], fakeNews[ide]]);
+    } else {
+      setCheckNewsPair([fakeNews[ide], news[ide]]);
+    }
+    setNews((prevTrueValue) => {
+      const filteredNews = prevTrueValue.filter((el, index) => {
+        if (index === ide) {
+          return false;
+        }
+        return true;
+      });
+      return filteredNews;
+    });
+    setFakeNews((prevFakeValue) => {
+      const filteredFakeNews = prevFakeValue.filter((el, index) => {
+        if (index === ide) {
+          return false;
+        }
+        return true;
+      });
+      return filteredFakeNews;
+    });
+  };
+
   return (
-
     <>
-
       <header className="select-news">
         <h1>News or Fake</h1>
         <h2>that is the question</h2>
       </header>
       <section className="selectnews">
-        <article>
-          <img src={contentLeft[ide].img} alt="" />
-          <h2>
-            {contentLeft[ide].name}
-            {contentLeft[ide].title}
-          </h2>
-          <p>&nbsp;</p>
-        </article>
-        <article>
-          <img src={contentRight[ide].img} alt="" />
-          <h2>
-            {contentRight[ide].name}
-            {contentRight[ide].title}
-          </h2>
-          <p>&nbsp;</p>
-        </article>
+        {checkNewsPair.length === 2 && (
+          <>
+            <SelectNewsCard newItem={checkNewsPair[0]} change={change} />
+            <SelectNewsCard newItem={checkNewsPair[1]} change={change} />
+          </>
+        )}
       </section>
     </>
   );
