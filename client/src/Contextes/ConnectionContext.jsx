@@ -5,7 +5,9 @@ export const UserConnectionContext = createContext();
 // eslint-disable-next-line react/prop-types
 export function UserConnectionProvider({ children }) {
   const [isConnected, setIsConnected] = useState(false);
+  const [username, setUsername] = useState(null);
 
+  // eslint-disable-next-line no-shadow
   const handleLogin = (username, password) =>
     fetch("http://localhost:3001/api/auth", {
       method: "POST",
@@ -27,6 +29,7 @@ export function UserConnectionProvider({ children }) {
         if (data.token) {
           localStorage.setItem("token", data.token);
           setIsConnected(true);
+          setUsername(username);
         } else {
           throw new Error("Authentication failed");
         }
@@ -37,8 +40,11 @@ export function UserConnectionProvider({ children }) {
       });
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <UserConnectionContext.Provider value={{ isConnected, handleLogin }}>
+
+    <UserConnectionContext.Provider
+      /* eslint-disable-next-line react/jsx-no-constructed-context-values */
+      value={{ isConnected, handleLogin, username }}
+    >
       {children}
     </UserConnectionContext.Provider>
   );
