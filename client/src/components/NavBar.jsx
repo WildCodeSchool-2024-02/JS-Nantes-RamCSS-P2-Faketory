@@ -9,8 +9,8 @@ function NavBar() {
       </NavLink>
       <nav className="nav-container">
         <ul className="header-ul">
-          <NavLink className="lien" to="/best-of">
-            Best Of
+          <NavLink className="lien" to="/select-news">
+            Quizz
           </NavLink>
           <NavLink className="lien" to="/create">
             Créer sa Fake News

@@ -1,7 +1,11 @@
 .banniere {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 30px;
   align-items: center;
   background-color: #d30303;
+}
+.banniere > * {
+  flex: 1;
 }
