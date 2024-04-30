@@ -9,6 +9,7 @@ import BestOf from "./pages/BestOf";
 import Create from "./pages/Create";
 import Redirection from "./pages/Redirection";
 import NewUser from "./pages/NewUser";
+import SelectNews from "./pages/SelectNews";
 // page components
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "newuser",
         element: <NewUser />,
+      },
+      {
+        path: "select-news",
+        element: <SelectNews />,
       },
     ],
   },
