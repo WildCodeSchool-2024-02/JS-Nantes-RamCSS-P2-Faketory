@@ -89,9 +89,7 @@ function Create() {
             }
             return response.json();
           })
-          // eslint-disable-next-line no-shadow
-          .then((data) => {
-            console.warn("News posted successfully", data);
+          .then(() => {
             setNewsTitle("");
             setNewsText("");
             setRandomArticle2(selectRandomArticle(newsArticles));
