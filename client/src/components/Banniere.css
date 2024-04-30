@@ -1,58 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
-
-.zone-annonce {
-  background-color: aqua;
-  display: block;
-  margin: 40px auto;
-  padding: 0;
-  overflow: hidden;
-  top: 50px;
-  left: 0;
-  width: 1000px;
-  font-family: "Press Start 2P", cursive;
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: #448e08;
-}
-
-.annonce_content {
-  display: block;
-  padding: 10px 0px;
-  width: 100%;
-}
-
-.content1 {
-  transform: translateX(100%);
-  /* Animation start*/
-
-  /* animation */
-  animation: move 20s linear infinite;
-}
-
-.content2 {
-  transform: translateX(250%);
-  /* Animation start*/
-  /* animation */
-  animation: move 20s linear infinite;
-}
-
-.content3 {
-  transform: translateX(320%);
-  /* Animation start*/
-  /* animation */
-  animation: move 25s linear infinite;
-}
-
-.content4 {
-  transform: translateX(380%);
-  /* Animation start*/
-  /* animation */
-  animation: move 30s linear infinite;
-}
-
-/* Launch animation */
-@keyframes move {
-  to {
-    transform: translateX(-100%);
-  }
+.banniere {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  background-color: #d30303;
 }

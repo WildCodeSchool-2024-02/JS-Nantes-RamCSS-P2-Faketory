@@ -1,0 +1,22 @@
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.photo-card {
+  height: 80px;
+  width: 80px;
+}
+
+.photo-card img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+
+figcaption > img {
+  border-radius: 10px;
+}
