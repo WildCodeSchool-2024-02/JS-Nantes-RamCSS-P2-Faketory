@@ -1,0 +1,141 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 3rem;
+}
+
+h3 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 2rem;
+}
+
+h5 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 1rem;
+}
+
+h4 {
+  text-align: left;
+  color: var(--blue);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 1rem;
+}
+
+p {
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+#card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 400px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+#spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  background-color: var(--white);
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  padding: 5px;
+  font-family: var(--font), sans-serif;
+  font-size: 1rem;
+}
+
+.submit {
+  background-color: var(--blue);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: var(--font), sans-serif;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.submit:hover {
+  background-color: var(--black);
+  color: var(--blue);
+  border: solid 1px var(--blue);
+}
+
+#img2,
+#img3 {
+  width: 40%;
+  height: 30%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#imageTitre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
