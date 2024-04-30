@@ -12,6 +12,7 @@ const port = 3001;
 const newsData = require("./Fakenewsnom.json");
 const newsData2 = require("./Fakenews.json");
 const newsData3 = require("./UserNews.json");
+const newsData4 = require("./trueNews.json");
 const users = require("./users.json");
 
 
@@ -28,6 +29,9 @@ app.get("/api/fakenews", (req, res) => {
 });
 app.get("/api/usernews", (req, res) => {
   res.json(newsData3);
+});
+app.get("/api/truenews", (req, res) => {
+  res.json(newsData4);
 });
 
 app.post("/api/auth", (req, res) => {
