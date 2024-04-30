@@ -9,6 +9,14 @@
   gap: 1rem;
   text-align: center;
 }
+.card-news-img {
+  overflow: hidden;
+  height: 280px;
+}
+.card-news-img img {
+  object-fit: cover;
+  height: 100%;
+}
 .card-news .container-buttons {
   width: 100%;
 }

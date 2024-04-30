@@ -28,7 +28,7 @@ function Create() {
     navigate("/redirection");
   }
   useEffect(() => {
-    fetch("http://localhost:3001/api/fakenews")
+    fetch("http://localhost:3001/api/trueNews2")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -114,18 +114,12 @@ function Create() {
         <div id="card1" className="card">
           <form onSubmit={handleSubmit}>
             <label>
-              <h5>Ecrivez un titre :</h5>
-              <input
+              <h5>Ispirez-vous de l'image et</h5>
+              <h5>écrivez un titre :</h5>
+              <textarea
                 type="text"
                 value={newsTitle}
                 onChange={(e) => setNewsTitle(e.target.value)}
-              />
-            </label>
-            <label>
-              <h5>Une phrase d'accroche :</h5>
-              <textarea
-                value={newsText}
-                onChange={(e) => setNewsText(e.target.value)}
               />
             </label>
             <button type="submit" className="submit">
