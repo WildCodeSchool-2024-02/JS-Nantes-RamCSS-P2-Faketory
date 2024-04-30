@@ -30,14 +30,23 @@ select-news > h2 {
 }
 
 .selectnews > article {
+  display: flex;
   background: var(--white);
   color: var(--black);
-  width: 550px;
+  width: 430px;
   text-align: center;
   padding: 25px 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 .selectnews > article > img {
-  width: 500px;
+  width: 100%;
+}
+.selectnews > article button {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  background-color: var(--blue);
 }
 
 .selectnews > article > h2 {
