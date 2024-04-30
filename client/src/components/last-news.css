@@ -5,9 +5,14 @@
   gap: 2rem;
   flex-direction: column;
 }
-
+.last-news-container h2 {
+  font-size: 1.8rem;
+  text-align: left;
+  color: var(--white);
+}
 .last-news {
   display: flex;
+  align-items: center;
   gap: 1rem;
   margin: 0;
 }
@@ -16,13 +21,18 @@
   height: 6rem;
   width: 12rem;
 }
-
+.last-news-img img {
+  object-fit: cover;
+  height: 100%;
+}
 .last-news-infos {
   display: flex;
   gap: 1rem;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
+  color: var(--white);
+  line-height: 1;
 }
 
 .last-news-infos-line {
