@@ -2,13 +2,24 @@
   display: block;
   background: var(--black);
   color: var(--white);
+  padding-top: 2rem;
 }
 select-news > h1 {
   font-size: 2rem;
+  font-weight: bold;
 }
 select-news > h2 {
   background: var(--black);
   color: var(--white);
+}
+
+.select-news-title {
+  font-weight: bold !important;
+  padding-bottom: 2rem;
+}
+
+.select-news-sub-title {
+  font-weight: bold;
 }
 
 .selectnews {
@@ -32,6 +43,7 @@ select-news > h2 {
 .selectnews > article > h2 {
   font-size: 1rem;
   color: var(--black);
+  font-weight: bold;
 }
 
 .selectnews > article > p {

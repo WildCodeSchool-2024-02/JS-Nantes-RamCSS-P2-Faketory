@@ -21,6 +21,10 @@
   color: var(--black);
 }
 
+.contener > article > h1 {
+  font-weight: bold;
+}
+
 .contener > article > h2 {
   font-size: 1em;
   color: var(--black);

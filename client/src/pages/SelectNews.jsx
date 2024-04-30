@@ -115,8 +115,10 @@ function SelectNews() {
   return (
     <>
       <header className="select-news">
-        <h1>News or Fake</h1>
-        <h2>that is the question</h2>
+        <h2 id="select-news-title" className="select-news-title">
+          News or Fake
+        </h2>
+        <h2 className="select-news-sub-title">that is the question</h2>
       </header>
       <section className="selectnews">
         {checkNewsPair.length === 2 && (
