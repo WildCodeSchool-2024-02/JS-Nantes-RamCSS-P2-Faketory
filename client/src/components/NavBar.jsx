@@ -1,28 +1,25 @@
-import "./NavBar.css";
-
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 function NavBar() {
   return (
     <header className="header">
-      <img src="./images/logo-faketory.svg" alt="logo faketory" />
-      <nav className="nav container">
-        <ul>
-          <li>
-            <NavLink className="lien" to="/">
-              Home
-            </NavLink>
-          </li>
+      <NavLink to="/">
+        <img src="./images/logo-faketory.svg" alt="logo faketory" />
+      </NavLink>
+      <nav className="nav-container">
+        <ul className="header-ul">
           <NavLink className="lien" to="/best-of">
             Best Of
           </NavLink>
           <NavLink className="lien" to="/create">
-            Creer sa Fake News
+            Créer sa Fake News
           </NavLink>
           <NavLink className="lien" to="/fakeschool">
             Fake School
           </NavLink>
           <NavLink className="lien" to="/connexion">
+            <span className="icon-user" />
             Connexion
           </NavLink>
         </ul>

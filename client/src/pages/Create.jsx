@@ -2,13 +2,16 @@ import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserConnectionContext } from "../Contextes/ConnectionContext";
 
-import "./Create.css";
+import BanniereTest from "../components/BanniereTest";
+import "./UserConnection.css";
 import Spinner from "../assets/svg-spinners--bars-scale.svg";
 
 function Create() {
   const [newsTitle, setNewsTitle] = useState("");
   const [newsText, setNewsText] = useState("");
   const [newsArticles, setNewsArticles] = useState([]);
+  const [showFullTextCard2] = useState(false);
+
   const [loadingCard2, setLoadingCard2] = useState(true);
 
   const [randomArticle2, setRandomArticle2] = useState(null);
@@ -33,8 +36,8 @@ function Create() {
         return response.json();
       })
       .then((data) => {
-        setNewsArticles(data.truenews2);
-        setRandomArticle2(selectRandomArticle(data.truenews2));
+        setNewsArticles(data.fakenews);
+        setRandomArticle2(selectRandomArticle(data.fakenews));
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation: ", error);
@@ -86,9 +89,7 @@ function Create() {
             }
             return response.json();
           })
-          // eslint-disable-next-line no-shadow
-          .then((data) => {
-            console.warn("News posted successfully", data);
+          .then(() => {
             setNewsTitle("");
             setNewsText("");
             setRandomArticle2(selectRandomArticle(newsArticles));
@@ -108,6 +109,7 @@ function Create() {
   return (
     <>
       <h1> Créez votre Fake News</h1>
+      <BanniereTest />
       <div id="cards" className="cards">
         <div id="card1" className="card">
           <form onSubmit={handleSubmit}>
@@ -131,13 +133,19 @@ function Create() {
               <img id="spinner" src={Spinner} alt="Loading..." />
             ) : (
               <>
-                <h5>{randomArticle2.section}</h5>
+                <p>{randomArticle2.section}</p>
                 <div id="imageTitre">
                   <img id="img2" src={randomArticle2.img} alt="Article" />
                   <h4>{newsTitle || randomArticle2.title}</h4>
                 </div>
+                <p>
+                  {showFullTextCard2
+                    ? (newsText || randomArticle2.body).replace(/\n/g, "<br />")
+                    : `${(newsText || randomArticle2.body).substring(0, 100)}`}
+                </p>
+
                 <div id="auteur">
-                  <h5>{username}</h5>
+                  <p>{username}</p>
                 </div>
               </>
             )}

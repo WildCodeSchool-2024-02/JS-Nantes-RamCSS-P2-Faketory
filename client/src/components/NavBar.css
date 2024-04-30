@@ -1,21 +1,33 @@
 header {
+  margin-top: 20px;
+  height: 99px;
   display: flex;
   align-items: center;
   flex-direction: row;
   background-color: white;
 }
 
-ul {
+.nav-container {
+  width: 100%;
+}
+
+.header-ul {
+  width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  gap: 20px;
+  justify-content: center;
   list-style: none;
+  align-items: center;
+  gap: 150px;
 }
 
 .lien {
   text-decoration: none;
   color: var(--black);
   font-family: var(--font), sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.icon-user {
+  font-size: 30px;
 }
