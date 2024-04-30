@@ -13,7 +13,7 @@ select-news > h2 {
 
 .selectnews {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 80%;
   margin: auto;
 }
@@ -37,4 +37,12 @@ select-news > h2 {
 .selectnews > article > p {
   font-size: 1rem;
   text-align: left;
+}
+
+.reponse {
+  width: 550px;
+  font-weight: bold;
+  color: var(--white);
+  word-wrap: nowrap;
+  text-align: center;
 }

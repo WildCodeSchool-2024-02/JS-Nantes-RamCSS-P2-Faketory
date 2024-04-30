@@ -9,7 +9,7 @@ function SelectNewsCard({ newItem, change }) {
           {newItem.name}
           {newItem.title}
         </h2>
-        <button type="button" onClick={change}>
+        <button type="button" onClick={() => change(newItem.status)}>
           Vrai
         </button>
       </article>
@@ -19,6 +19,6 @@ function SelectNewsCard({ newItem, change }) {
 export default SelectNewsCard;
 
 SelectNewsCard.propTypes = {
-  newItem: PropTypes.arrayOf.isRequired,
+  newItem: PropTypes.objectOf.isRequired,
   change: PropTypes.func.isRequired,
 };
