@@ -117,8 +117,8 @@ app.post('/api/usernews', (req, res) => {
 
 
 // Production-ready setup
-const reactBuildPath = path.join(__dirname, "/../../client/dist");
-const publicFolderPath = path.join(__dirname, "/../public");
+const reactBuildPath = path.join(__dirname, "/../client/dist");
+const publicFolderPath = path.join(__dirname, "/public");
 
 // Serve react resources
 app.use(express.static(reactBuildPath));
