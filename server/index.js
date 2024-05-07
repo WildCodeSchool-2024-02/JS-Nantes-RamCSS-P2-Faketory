@@ -115,6 +115,23 @@ app.post('/api/usernews', (req, res) => {
   });
 });
 
+
+// Production-ready setup
+const reactBuildPath = path.join(__dirname, "/../../client/dist");
+const publicFolderPath = path.join(__dirname, "/../public");
+
+// Serve react resources
+app.use(express.static(reactBuildPath));
+
+// Serve server resources
+app.get("*.*", express.static(publicFolderPath, { maxAge: "1y" }));
+
+// Redirect unhandled requests to the react index file
+app.get("*", (_, res) => {
+  res.sendFile(path.join(reactBuildPath, "/index.html"));
+});
+
+
 app.listen(port, (err) => {
   if (err) {
     console.error("Error: ça marche pas", err);
