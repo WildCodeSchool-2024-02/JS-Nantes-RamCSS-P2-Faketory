@@ -28,7 +28,7 @@ function Create() {
     navigate("/redirection");
   }
   useEffect(() => {
-    fetch("http://localhost:3001/api/trueNews2")
+    fetch("http://localhost:3010/api/trueNews2")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -51,7 +51,7 @@ function Create() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:3001/api/usernews")
+    fetch("http://localhost:3010/api/usernews")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -76,7 +76,7 @@ function Create() {
           date: randomArticle2.date,
         };
 
-        fetch("http://localhost:3001/api/usernews", {
+        fetch("http://localhost:3010/api/usernews", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
