@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 const path = require('path');
 
 const app = express();
-const port = 3010;
+const port = 3310;
 
 const newsData = require("./Fakenewsnom.json");
 const newsData2 = require("./Fakenews.json");

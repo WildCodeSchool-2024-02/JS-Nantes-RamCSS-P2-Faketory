@@ -21,7 +21,7 @@ function UserConnection() {
   const { handleLogin } = useContext(UserConnectionContext);
 
   useEffect(() => {
-    fetch("http://localhost:3010/api/fakenewsnom")
+    fetch("http://localhost:3310/api/fakenewsnom")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
