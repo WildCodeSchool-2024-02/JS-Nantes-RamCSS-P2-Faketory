@@ -11,7 +11,7 @@ function NewUser() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    fetch("http://localhost:3001/api/users", {
+    fetch("http://localhost:3310/api/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

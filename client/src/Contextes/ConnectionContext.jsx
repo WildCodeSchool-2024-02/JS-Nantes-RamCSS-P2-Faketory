@@ -9,7 +9,7 @@ export function UserConnectionProvider({ children }) {
 
   // eslint-disable-next-line no-shadow
   const handleLogin = (username, password) =>
-    fetch("http://localhost:3001/api/auth", {
+    fetch("http://localhost:3310/api/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

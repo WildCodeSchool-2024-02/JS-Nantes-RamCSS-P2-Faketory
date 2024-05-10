@@ -7,7 +7,7 @@ function BanniereTest() {
 
   useEffect(() => {
     const fetchNewsArticles = () => {
-      fetch("http://localhost:3001/api/usernews")
+      fetch("http://localhost:3310/api/usernews")
         .then((response) => response.json())
         .then((data) => {
           setNewsArticles(data.newNews.slice(-3));

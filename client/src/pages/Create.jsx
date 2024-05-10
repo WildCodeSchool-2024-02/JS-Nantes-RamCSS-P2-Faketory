@@ -28,7 +28,7 @@ function Create() {
     navigate("/redirection");
   }
   useEffect(() => {
-    fetch("http://localhost:3001/api/trueNews2")
+    fetch("http://localhost:3310/api/trueNews2")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
